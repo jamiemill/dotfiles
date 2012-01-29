@@ -76,6 +76,7 @@ au BufNewFile,BufRead *.xt  setfiletype xt
 au BufNewFile,BufRead *.module  setfiletype php
 au BufNewFile,BufRead *.jst  setfiletype html
 au BufNewFile,BufRead *.ctp  setfiletype php
+au BufNewFile,BufRead *.ldg,*.ledger setf ledger | comp ledger
 
 " Enable soft-wrapping for text files
 autocmd FileType text,markdown,html,xhtml,eruby setlocal wrap linebreak nolist
