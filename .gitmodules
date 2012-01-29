@@ -1,0 +1,57 @@
+[submodule "vim-plugins/vim-fugitive"]
+	path = vim-plugins/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "vim-plugins/molokai"]
+	path = vim-plugins/molokai
+	url = https://github.com/vim-scripts/molokai.git
+[submodule "vim-plugins/vim-handlebars"]
+	path = vim-plugins/vim-handlebars
+	url = https://github.com/nono/vim-handlebars.git
+[submodule "vim-plugins/coffee-script"]
+	path = vim-plugins/coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "vim-plugins/javascript"]
+	path = vim-plugins/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim-plugins/cucumber"]
+	path = vim-plugins/cucumber
+	url = https://github.com/tpope/vim-cucumber.git
+[submodule "vim-plugins/markdown"]
+	path = vim-plugins/markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "vim-plugins/rails"]
+	path = vim-plugins/rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "vim-plugins/rspec"]
+	path = vim-plugins/rspec
+	url = https://github.com/skwp/vim-rspec.git
+[submodule "vim-plugins/scss"]
+	path = vim-plugins/scss
+	url = https://github.com/cakebaker/scss-syntax.vim.git
+[submodule "vim-plugins/ruby"]
+	path = vim-plugins/ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "vim-plugins/css-color"]
+	path = vim-plugins/css-color
+	url = https://github.com/ap/vim-css-color
+[submodule "vim-plugins/supertab"]
+	path = vim-plugins/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim-plugins/surround"]
+	path = vim-plugins/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim-plugins/syntastic"]
+	path = vim-plugins/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim-plugins/tagbar"]
+	path = vim-plugins/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "vim-plugins/nerdtree"]
+	path = vim-plugins/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim-plugins/indent-object"]
+	path = vim-plugins/indent-object
+	url = https://github.com/michaeljsmith/vim-indent-object.git
+[submodule "vim-plugins/ctrlp"]
+	path = vim-plugins/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
