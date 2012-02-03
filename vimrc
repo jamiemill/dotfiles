@@ -20,6 +20,11 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
+
+" auto-complete filenames in a nice way in the status bar
+set wildmenu
+set wildmode=full
+
 syntax on
 set hlsearch
 
