@@ -98,3 +98,30 @@ set nofoldenable
 
 " Use Node.js for JavaScript interpretation
 let $JS_CMD='node'
+
+" show hidden chars
+"set list
+"set listchars=trail:⋅,nbsp:⋅,tab:▸\ ,eol:¬
+
+" highlight extra whitespace
+" see http://vim.wikia.com/wiki/Highlight_unwanted_spaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+" taken from: http://stackoverflow.com/questions/356126/how-can-you-automatically-remove-trailing-whitespace-in-vim/1618401#1618401
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+" auto-strip trailing white space for ruby files
+" autocmd BufWritePre *.rb :call <SID>StripTrailingWhitespaces()
+
+" command to strip white space from any file
+nnoremap <leader>s :call <SID>StripTrailingWhitespaces()<cr>
