@@ -125,3 +125,6 @@ endfun
 
 " command to strip white space from any file
 nnoremap <leader>s :call <SID>StripTrailingWhitespaces()<cr>
+
+" When I close a tab, remove the buffer
+set nohidden
