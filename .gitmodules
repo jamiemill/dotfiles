@@ -58,3 +58,6 @@
 [submodule "vim-plugins/ledger"]
 	path = vim-plugins/ledger
 	url = https://github.com/cypok/vim-ledger.git
+[submodule "vim-plugins/endwise"]
+	path = vim-plugins/endwise
+	url = git://github.com/tpope/vim-endwise.git
