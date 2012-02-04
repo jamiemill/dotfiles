@@ -37,3 +37,6 @@ export NODE_PATH="/usr/local/lib/node_modules"
 # remap coffeescript cake command to ccake
 #alias ccake="/usr/local/bin/cake"
 
+
+alias engines="play -c2 -n synth whitenoise band -n 100 24 band -n 300 100 gain +20"
+alias beach="play -t sl -r48000 -c2 - synth -1 pinknoise tremolo .1 40 <  /dev/zero"
