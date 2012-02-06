@@ -2,7 +2,7 @@ require 'rake'
 
 desc "install the dot files into user's home directory"
 task :install do
-  %w[vimrc tmux.conf bash_profile].each do |file|
+  %w[vimrc vimstatus tmux.conf bash_profile].each do |file|
 
     path = File.join(ENV['HOME'], ".#{file}")
 

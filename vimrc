@@ -54,6 +54,10 @@ colorscheme molokai
 "for iterm2 in 256 colour mode
 set t_Co=256
 
+"some stuff to get the mouse going in term
+set mouse=a
+set ttymouse=xterm2
+
 set noerrorbells
 set visualbell
 
@@ -101,7 +105,7 @@ let $JS_CMD='node'
 
 " show hidden chars
 "set list
-"set listchars=trail:⋅,nbsp:⋅,tab:▸\ ,eol:¬
+set listchars=trail:⋅,nbsp:⋅,tab:▸\ ,eol:¬
 
 " highlight extra whitespace
 " see http://vim.wikia.com/wiki/Highlight_unwanted_spaces
@@ -128,3 +132,8 @@ nnoremap <leader>s :call <SID>StripTrailingWhitespaces()<cr>
 
 " When I close a tab, remove the buffer
 set nohidden
+
+" toggle NERDTree with \n
+nnoremap <leader>n :NERDTreeToggle<cr>
+
+source ~/.vimstatus
