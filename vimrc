@@ -66,8 +66,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
-set nowrap
-
 "Enable this to show tab and EOL chars visually
 "set list listchars=tab:▸\ ,eol:¬,trail:·
 
@@ -95,6 +93,10 @@ autocmd FileType text,markdown,html,xhtml,eruby setlocal wrap linebreak nolist
 "Disable auto-folding of loaded files
 set nofoldenable
 
+set autoindent
+set smartindent
+set smarttab
+set nowrap
 " Auto-show NerdTree. Note when opening a folder full of files we get two
 " nerdttrees :-(
 " autocmd VimEnter * NERDTree
