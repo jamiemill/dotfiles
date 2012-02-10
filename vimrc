@@ -55,8 +55,8 @@ colorscheme molokai
 set t_Co=256
 
 "some stuff to get the mouse going in term
-set mouse=a
-set ttymouse=xterm2
+"set mouse=a
+"set ttymouse=xterm2
 
 set noerrorbells
 set visualbell
