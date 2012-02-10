@@ -64,3 +64,6 @@
 [submodule "vim-plugins/nerdcommenter"]
 	path = vim-plugins/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "vim-plugins/php-html"]
+	path = vim-plugins/php-html
+	url = https://github.com/vim-scripts/php.vim-html-enhanced.git
