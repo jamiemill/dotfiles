@@ -138,4 +138,7 @@ set nohidden
 " toggle NERDTree with \n
 nnoremap <leader>n :NERDTreeToggle<cr>
 
+" preview markdown
+nnoremap <leader>md :!markdown --html4tags % > /tmp/markdownpreview.html && open /tmp/markdownpreview.html<cr><cr>
+
 source ~/.vimstatus
