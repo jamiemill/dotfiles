@@ -142,6 +142,6 @@ set nohidden
 nnoremap <leader>n :NERDTreeToggle<cr>
 
 " preview markdown
-nnoremap <leader>md :!markdown --html4tags % > /tmp/markdownpreview.html && open /tmp/markdownpreview.html<cr><cr>
+nnoremap <leader>md :w ! mdtools format --add-toc > /tmp/mdpreview.html && open /tmp/mdpreview.html<cr><cr>
 
 source ~/.vimstatus
