@@ -67,3 +67,9 @@
 [submodule "vim-plugins/php-html"]
 	path = vim-plugins/php-html
 	url = https://github.com/vim-scripts/php.vim-html-enhanced.git
+[submodule "vim-plugins/autoclose-tag"]
+	path = vim-plugins/autoclose-tag
+	url = https://github.com/zeekay/vim-autoclose.git
+[submodule "vim-plugins/autoclose"]
+	path = vim-plugins/autoclose
+	url = https://github.com/Townk/vim-autoclose.git
