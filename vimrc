@@ -9,6 +9,11 @@ call pathogen#infect('~/Work/dotfiles/vim-plugins')
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" disable macvim toolbar
+if has("gui_running")
+	set guioptions=egmrt
+endif
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
