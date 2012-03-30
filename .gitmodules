@@ -73,3 +73,6 @@
 [submodule "vim-plugins/autoclose"]
 	path = vim-plugins/autoclose
 	url = https://github.com/Townk/vim-autoclose.git
+[submodule "vim-plugins/less"]
+	path = vim-plugins/less
+	url = https://github.com/groenewege/vim-less
