@@ -80,11 +80,12 @@ set softtabstop=4
 if has("autocmd")
     autocmd FileType ruby       setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType yaml       setlocal ts=2 sts=2 sw=2 expandtab
-    autocmd FileType markdown   setlocal ts=2 sts=2 sw=2 expandtab
+    autocmd FileType markdown   setlocal ts=4 sts=4 sw=4 expandtab
     autocmd FileType html       setlocal ts=2 sts=2 sw=2 noexpandtab
     autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
     autocmd FileType php        setlocal ts=4 sts=4 sw=4 noexpandtab
     autocmd FileType css        setlocal ts=4 sts=4 sw=4 noexpandtab
+    autocmd FileType coffee     setlocal ts=2 sts=2 sw=2 expandtab
 endif
 
 au BufNewFile,BufRead *.txt setfiletype text
@@ -92,7 +93,7 @@ au BufNewFile,BufRead *.as setfiletype actionscript
 au BufNewFile,BufRead *.less setfiletype less
 au BufNewFile,BufRead *.xt  setfiletype xt
 au BufNewFile,BufRead *.module  setfiletype php
-au BufNewFile,BufRead *.jst  setfiletype html
+au BufNewFile,BufRead *.jst  setfiletype php
 au BufNewFile,BufRead *.ctp  setfiletype php
 au BufNewFile,BufRead *.ldg,*.ledger setf ledger | comp ledger
 
@@ -148,6 +149,6 @@ set nohidden
 nnoremap <leader>n :NERDTreeToggle<cr>
 
 " preview markdown
-nnoremap <leader>md :w ! mdtools format --add-toc > /tmp/mdpreview.html && open /tmp/mdpreview.html<cr><cr>
+nnoremap <leader>md :w ! multimarkdown \| mdtools format --add-toc > /tmp/mdpreview.html && open /tmp/mdpreview.html<cr><cr>
 
 source ~/.vimstatus
