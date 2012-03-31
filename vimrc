@@ -107,10 +107,6 @@ set autoindent
 set smartindent
 set smarttab
 set nowrap
-" Auto-show NerdTree. Note when opening a folder full of files we get two
-" nerdttrees :-(
-" autocmd VimEnter * NERDTree
-" autocmd BufEnter * NERDTreeMirror
 
 " Use Node.js for JavaScript interpretation
 let $JS_CMD='node'
@@ -145,10 +141,13 @@ nnoremap <leader>s :call <SID>StripTrailingWhitespaces()<cr>
 " When I close a tab, remove the buffer
 set nohidden
 
-" toggle NERDTree with \n
-nnoremap <leader>n :NERDTreeToggle<cr>
+" toggle tab-mirrored NERDTree with \n
+nnoremap <Leader>n <plug>NERDTreeTabsToggle<CR>
 
 " preview markdown
 nnoremap <leader>md :w ! multimarkdown \| mdtools format --add-toc > /tmp/mdpreview.html && open /tmp/mdpreview.html<cr><cr>
+
+" find the current file in the nerdtree
+map <leader>f :NERDTreeFind<cr>
 
 source ~/.vimstatus

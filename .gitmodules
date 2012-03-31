@@ -76,3 +76,6 @@
 [submodule "vim-plugins/less"]
 	path = vim-plugins/less
 	url = https://github.com/groenewege/vim-less
+[submodule "vim-plugins/nerdtree-tabs"]
+	path = vim-plugins/nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
