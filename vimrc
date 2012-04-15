@@ -142,7 +142,7 @@ nnoremap <leader>s :call <SID>StripTrailingWhitespaces()<cr>
 set nohidden
 
 " toggle tab-mirrored NERDTree with \n
-nnoremap <Leader>n <plug>NERDTreeTabsToggle<CR>
+nnoremap <Leader>n :NERDTreeTabsToggle<CR>
 
 " preview markdown
 nnoremap <leader>md :w ! multimarkdown \| mdtools format --add-toc > /tmp/mdpreview.html && open /tmp/mdpreview.html<cr><cr>
