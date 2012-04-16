@@ -57,7 +57,7 @@ map <leader>t :TagbarToggle<cr>
 " Also load indent files, to automatically do language-dependent indenting.
 filetype plugin indent on
 
-colorscheme molokai
+colorscheme Tomorrow-Night
 
 "for iterm2 in 256 colour mode
 set t_Co=256
