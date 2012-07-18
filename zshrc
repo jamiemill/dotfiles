@@ -5,15 +5,15 @@ ZSH=~/Work/dotfiles/oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
-
-# When in vim binding mode (as set by the vi-mode plugin enabled later, ^R
-# for reverse incremental search stops working. Fix that now:
-bindkey '^R' history-incremental-search-backward
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="josh"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# use macvim in terminal mode instead of osx vim, so we have ruby support
+alias vim="mvim -v"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -33,7 +33,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git node npm vi-mode brew)
+plugins=(git node npm brew)
 
 source $ZSH/oh-my-zsh.sh
 
