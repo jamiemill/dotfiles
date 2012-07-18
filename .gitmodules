@@ -79,3 +79,6 @@
 [submodule "vim-plugins/nerdtree-tabs"]
 	path = vim-plugins/nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
