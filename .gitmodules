@@ -82,3 +82,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = git@github.com:jamiemill/oh-my-zsh.git
+[submodule "vim-plugins/scala"]
+	path = vim-plugins/scala
+	url = https://github.com/derekwyatt/vim-scala.git
