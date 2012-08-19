@@ -150,4 +150,14 @@ nnoremap <leader>md :w ! multimarkdown \| mdtools format --add-toc > /tmp/mdprev
 " find the current file in the nerdtree
 map <leader>f :NERDTreeFind<cr>
 
+" Disable arrow keys for learing purposes
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP>
+noremap   <Right>  <NOP>
+
 source ~/.vimstatus
