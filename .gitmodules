@@ -85,3 +85,6 @@
 [submodule "vim-plugins/scala"]
 	path = vim-plugins/scala
 	url = https://github.com/derekwyatt/vim-scala.git
+[submodule "vim-plugins/taglist-plus"]
+	path = vim-plugins/taglist-plus
+	url = https://github.com/int3/vim-taglist-plus.git
