@@ -37,5 +37,7 @@ plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
+export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
+
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/jamiemill/.rvm/gems/ruby-1.9.2-p290/bin:/Users/jamiemill/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/jamiemill/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/jamiemill/.rvm/bin:/usr/local/php5/bin:~/.cabal/bin:~/Work/cakephp/cake/console:~/Work/drush:/Applications/play-2.0.1
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/jamiemill/.rvm/gems/ruby-1.9.2-p290/bin:/Users/jamiemill/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/jamiemill/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/jamiemill/.rvm/bin:/usr/local/php5/bin:~/.cabal/bin:~/Work/cakephp/cake/console:~/Work/drush:/Applications/play-2.0.3
