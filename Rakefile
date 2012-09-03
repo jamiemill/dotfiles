@@ -20,5 +20,18 @@ task :install do
     system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
 
   end
+
+  puts "linking custom snipmate snippets"
+  dotvimdir = File.join(ENV['HOME'], ".vim")
+  if !File.exist?(dotvimdir)
+    puts "~/.vim does not exist yet, you must not have installed pathogen!"
+    exit
+  end
+  snippetsdir = File.join(dotvimdir, "snippets")
+  if File.symlink?(snippetsdir)
+    system %Q{rm -rf #{snippetsdir}}
+  end
+  system %Q{ln -s "$PWD/vim-snippets" "#{snippetsdir}"}
+
 end
 

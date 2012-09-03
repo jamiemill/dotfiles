@@ -88,3 +88,6 @@
 [submodule "vim-plugins/taglist-plus"]
 	path = vim-plugins/taglist-plus
 	url = https://github.com/int3/vim-taglist-plus.git
+[submodule "vim-plugins/snipmate"]
+	path = vim-plugins/snipmate
+	url = git://github.com/msanders/snipmate.vim.git
