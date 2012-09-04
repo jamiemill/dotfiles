@@ -160,4 +160,9 @@ noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
 
+" Customise ctrl-p ignored files
+set wildignore+=*/.git/*,*.so,*.swp,*.zip
+" ignore play framework build dir
+set wildignore+=*/target/*
+
 source ~/.vimstatus
