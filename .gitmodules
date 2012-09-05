@@ -91,3 +91,9 @@
 [submodule "vim-plugins/snipmate"]
 	path = vim-plugins/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
+[submodule "vim-plugins/jellybeans"]
+	path = vim-plugins/jellybeans
+	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "vim-plugins/solarized"]
+	path = vim-plugins/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
