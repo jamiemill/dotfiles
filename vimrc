@@ -57,7 +57,19 @@ map <leader>t :TagbarToggle<cr>
 " Also load indent files, to automatically do language-dependent indenting.
 filetype plugin indent on
 
-colorscheme Tomorrow-Night
+" Colour schemes I like:
+"colorscheme molokai
+"colorscheme wombat256mod
+"colorscheme Tomorrow-Night
+
+" solarized
+" the only way to use it in terminal 'properly' is to also load
+" the solarized terminal theme.
+" without doing this, you must set
+" let g:solarized_termcolors=256 to go into 'degraded' mode.
+" let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
 
 "for iterm2 in 256 colour mode
 set t_Co=256
