@@ -70,3 +70,23 @@ echo "> Linking $SNIPPETSDIR"
 ln -s "$PWD/vim-snippets" $SNIPPETSDIR
 
 
+##################################################
+# Link custom zsh plugins inside oh-my-szh/custom
+# which is .gitignored by the maintainer.
+##################################################
+
+mkdir -p "$PWD/oh-my-zsh/custom/plugins"
+
+ZSH_CUSTOMS="plugins/zsh-syntax-highlighting jamie.zsh-theme"
+
+for CUSTOM in $ZSH_CUSTOMS
+do
+	SRC="$PWD/oh-my-zsh-custom/$CUSTOM"
+	DEST="$PWD/oh-my-zsh/custom/$CUSTOM"
+	if [ -f $DEST -o -d $DEST ]; then
+		echo "> Deleting $DEST"
+		rm -rf $DEST
+	fi
+	echo "> Linking $DEST"
+	ln -s $SRC $DEST
+done

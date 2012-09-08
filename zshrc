@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=~/Work/dotfiles/oh-my-zsh
+ZSH=~/dotfiles/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
