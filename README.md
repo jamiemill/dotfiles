@@ -33,6 +33,9 @@ including those running vim, to get it to work.
 Installation
 ------------
 
+This repo must be cloned to ~/dotfiles as the pathogen use in vimrc
+is hard-coded to look in ~/dotfiles/vim-plugins for its stuff.
+
 	cd ~
 	git clone https://github.com/jamiemill/dotfiles.git
 	cd dotfiles
@@ -43,3 +46,11 @@ Vim
 
 Adding a new plugin:
 - add the plugin as a submodule of this repo, inside `vim-plugins/`.
+
+ZSH
+---
+
+Add custom plugins in `oh-my-zsh-custom/plugins` and then run `./install.sh` again
+to make it get copied to `oh-my-zsh/custom` where it will be found.
+
+Add custom themes to `oh-my-zsh-custom` and run `./install.sh` again.

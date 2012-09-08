@@ -3,7 +3,7 @@
 
 " Load plugins pathogen-style.
 " TODO: use erb for this and set this path dynamically to point at this repo?
-call pathogen#infect('~/Work/dotfiles/vim-plugins')
+call pathogen#infect('~/dotfiles/vim-plugins')
 
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
