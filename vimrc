@@ -177,4 +177,7 @@ set wildignore+=*/.git/*,*.so,*.swp,*.zip
 " ignore play framework build dir
 set wildignore+=*/target/*
 
+" here we can either use jshint, jsl, gjslint, jslint, closurecompiler
+let g:syntastic_javascript_checker='jshint'
+
 source ~/.vimstatus
