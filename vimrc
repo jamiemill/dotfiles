@@ -1,8 +1,6 @@
 " NOTE: a lot of this is pinched from Janus.
 
-
 " Load plugins pathogen-style.
-" TODO: use erb for this and set this path dynamically to point at this repo?
 call pathogen#infect('~/dotfiles/vim-plugins')
 
 " Use Vim settings, rather then Vi settings (much better!).
@@ -57,6 +55,9 @@ map <leader>t :TagbarToggle<cr>
 " Also load indent files, to automatically do language-dependent indenting.
 filetype plugin indent on
 
+"for iterm2 in 256 colour mode
+set t_Co=256
+
 " Colour schemes I like:
 "colorscheme molokai
 "colorscheme wombat256mod
@@ -64,15 +65,12 @@ filetype plugin indent on
 
 " solarized
 " the only way to use it in terminal 'properly' is to also load
-" the solarized terminal theme.
+" the solarized terminal theme and it will use the 16 ansi colours.
 " without doing this, you must set
 " let g:solarized_termcolors=256 to go into 'degraded' mode.
-" let g:solarized_termcolors=256
+" which might be better for pairing remotely.
 set background=dark
 colorscheme solarized
-
-"for iterm2 in 256 colour mode
-set t_Co=256
 
 "some stuff to get the mouse going in term
 set mouse=a
@@ -81,36 +79,29 @@ set ttymouse=xterm2
 set noerrorbells
 set visualbell
 
-set noexpandtab
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-
-"Enable this to show tab and EOL chars visually
-"set list listchars=tab:▸\ ,eol:¬,trail:·
 
 if has("autocmd")
     autocmd FileType ruby       setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType yaml       setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType markdown   setlocal ts=4 sts=4 sw=4 expandtab
-    autocmd FileType html       setlocal ts=2 sts=2 sw=2 noexpandtab
-    autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+    autocmd FileType html       setlocal ts=2 sts=2 sw=2 expandtab
+    autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
     autocmd FileType php        setlocal ts=4 sts=4 sw=4 noexpandtab
-    autocmd FileType css        setlocal ts=4 sts=4 sw=4 noexpandtab
+    autocmd FileType css        setlocal ts=4 sts=4 sw=4 expandtab
     autocmd FileType coffee     setlocal ts=2 sts=2 sw=2 expandtab
+	autocmd BufNewFile,BufRead *.txt setfiletype text
+	autocmd BufNewFile,BufRead *.as setfiletype actionscript
+	autocmd BufNewFile,BufRead *.less setfiletype less
+	autocmd BufNewFile,BufRead *.jst  setfiletype php
+	autocmd BufNewFile,BufRead *.ctp  setfiletype php
+	autocmd BufNewFile,BufRead *.ldg,*.ledger setf ledger | comp ledger
+	" Enable soft-wrapping for text files
+	autocmd FileType text,markdown setlocal wrap linebreak nolist
 endif
-
-au BufNewFile,BufRead *.txt setfiletype text
-au BufNewFile,BufRead *.as setfiletype actionscript
-au BufNewFile,BufRead *.less setfiletype less
-au BufNewFile,BufRead *.xt  setfiletype xt
-au BufNewFile,BufRead *.module  setfiletype php
-au BufNewFile,BufRead *.jst  setfiletype php
-au BufNewFile,BufRead *.ctp  setfiletype php
-au BufNewFile,BufRead *.ldg,*.ledger setf ledger | comp ledger
-
-" Enable soft-wrapping for text files
-autocmd FileType text,markdown,html,xhtml,eruby setlocal wrap linebreak nolist
 
 "Disable auto-folding of loaded files
 set nofoldenable
