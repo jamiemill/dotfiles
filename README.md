@@ -33,10 +33,10 @@ including those running vim, to get it to work.
 Installation
 ------------
 
-	cd ~/Work/
+	cd ~
 	git clone https://github.com/jamiemill/dotfiles.git
 	cd dotfiles
-	rake install	
+	./install.sh
 
 Vim
 ---
