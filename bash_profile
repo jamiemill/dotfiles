@@ -17,7 +17,8 @@ alias ga="git add ."
 alias cake2="~/Work/cakephp/lib/Cake/Console/cake"
 
 # use macvim in terminal mode instead of osx vim, so we have ruby support
-alias vim="mvim -v"
+# but only if the command `mvim` exists
+command -v mvim && alias vim="mvim -v"
 
 export NODE_PATH="/usr/local/lib/node_modules"
 

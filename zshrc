@@ -13,7 +13,8 @@ ZSH_THEME="jamie"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # use macvim in terminal mode instead of osx vim, so we have ruby support
-alias vim="mvim -v"
+# but only if the command `mvim` exists
+command -v mvim && alias vim="mvim -v"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
