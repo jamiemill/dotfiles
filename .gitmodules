@@ -100,3 +100,6 @@
 [submodule "oh-my-zsh-custom/plugins/zsh-syntax-highlighting"]
 	path = oh-my-zsh-custom/plugins/zsh-syntax-highlighting
 	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "vim-plugins/jade"]
+	path = vim-plugins/jade
+	url = git://github.com/digitaltoad/vim-jade.git
