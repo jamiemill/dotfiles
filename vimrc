@@ -94,6 +94,7 @@ if has("autocmd")
     autocmd FileType css        setlocal ts=4 sts=4 sw=4 expandtab
     autocmd FileType coffee     setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType scala      setlocal ts=2 sts=2 sw=2 expandtab
+    autocmd FileType jade       setlocal ts=2 sts=2 sw=2 expandtab
 	autocmd BufNewFile,BufRead *.txt setfiletype text
 	autocmd BufNewFile,BufRead *.as setfiletype actionscript
 	autocmd BufNewFile,BufRead *.less setfiletype less
