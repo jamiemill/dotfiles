@@ -40,7 +40,8 @@ source $ZSH/oh-my-zsh.sh
 
 export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Applications/play-2.0.3
-
 # This loads RVM into a shell session.
 [[ -s "/Users/jamiemill/.rvm/scripts/rvm" ]] && source "/Users/jamiemill/.rvm/scripts/rvm"
+
+# Customize to your needs...
+export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
