@@ -45,3 +45,14 @@ export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
 
 # Customize to your needs...
 export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+
+# `mkcd` to `mkdir -p` and `cd` to it.
+function mkcd {
+  if [ ! -n "$1" ]; then
+    echo "Enter a directory name"
+  elif [ -d $1 ]; then
+    echo "\`$1' already exists"
+  else
+    mkdir -p $1 && cd $1
+  fi
+}
