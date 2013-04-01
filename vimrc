@@ -173,7 +173,9 @@ set wildignore+=*/.git/*,*.so,*.swp,*.zip
 " ignore play framework build dir
 set wildignore+=*/target/*
 
-" here we can either use jshint, jsl, gjslint, jslint, closurecompiler
-let g:syntastic_javascript_checker='jshint'
+" Specify which javascript syntax checker(s) to use with syntastic and in what
+" order.
+" Supports a list like: ['jshint', 'jsl', 'gjslint', 'jslint', 'closurecompiler']
+let g:syntastic_javascript_checkers=['jshint']
 
 source ~/.vimstatus
