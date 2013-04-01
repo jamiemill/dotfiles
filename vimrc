@@ -49,6 +49,9 @@ set tags=./tags;
 " Toggle TagBar
 map <leader>t :TagbarToggle<cr>
 
+" Toggle Paste/Nopaste
+map <leader>p :set paste!<cr>
+
 " Enable file type detection.
 " Use the default filetype settings, so that mail gets 'tw' set to 72,
 " 'cindent' is on in C files, etc.
