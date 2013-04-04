@@ -155,6 +155,9 @@ nnoremap <Leader>n :NERDTreeTabsToggle<CR>
 " preview markdown
 nnoremap <leader>md :w ! multimarkdown \| mdtools format --add-toc > /tmp/mdpreview.html && open /tmp/mdpreview.html<cr><cr>
 
+" re-select last pasted section
+nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
+
 " find the current file in the nerdtree
 map <leader>f :NERDTreeFind<cr>
 
