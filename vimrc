@@ -64,7 +64,7 @@ set t_Co=256
 " Colour schemes I like:
 "colorscheme molokai
 "colorscheme wombat256mod
-"colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night
 
 " solarized
 " the only way to use it in terminal 'properly' is to also load
@@ -72,8 +72,8 @@ set t_Co=256
 " without doing this, you must set
 " let g:solarized_termcolors=256 to go into 'degraded' mode.
 " which might be better for pairing remotely.
-set background=dark
-colorscheme solarized
+" set background=dark
+" colorscheme solarized
 
 "some stuff to get the mouse going in term
 set mouse=a
