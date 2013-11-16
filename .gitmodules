@@ -103,3 +103,6 @@
 [submodule "vim-plugins/jade"]
 	path = vim-plugins/jade
 	url = git://github.com/digitaltoad/vim-jade.git
+[submodule "vim-plugins/gitgutter"]
+	path = vim-plugins/gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
