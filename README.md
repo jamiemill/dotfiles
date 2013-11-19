@@ -54,3 +54,21 @@ Add custom plugins in `oh-my-zsh-custom/plugins` and then run `./install.sh` aga
 to make it get copied to `oh-my-zsh/custom` where it will be found.
 
 Add custom themes to `oh-my-zsh-custom` and run `./install.sh` again.
+
+Maintenance
+-----------
+
+Updating all submodules to latest versions:
+
+    ./update-plugins.sh
+
+Then if everything looks OK:
+
+    git commit -a
+    git push
+
+Receiving updates on other machines:
+
+    ./install.sh
+
+This will do a `git pull`, update submodules, and relink anything that should be linked.
