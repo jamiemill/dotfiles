@@ -9,10 +9,15 @@ set -e
 ##################################################
 
 echo ""
-echo "Updating..."
+echo "Updating this repo..."
 echo ""
 
 git pull
+
+echo ""
+echo "Updating submodules..."
+echo ""
+
 git submodule init
 git submodule update
 
