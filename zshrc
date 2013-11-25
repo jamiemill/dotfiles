@@ -40,11 +40,12 @@ source $ZSH/oh-my-zsh.sh
 
 export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
 
-# This loads RVM into a shell session.
-[[ -s "/Users/jamiemill/.rvm/scripts/rvm" ]] && source "/Users/jamiemill/.rvm/scripts/rvm"
-
 # Customize to your needs...
 export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 
 # `mkcd` to `mkdir -p` and `cd` to it.
 function mkcd {
