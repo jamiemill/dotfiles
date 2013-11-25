@@ -119,8 +119,9 @@ set nowrap
 " Use Node.js for JavaScript interpretation
 let $JS_CMD='node'
 
-" show hidden chars
+" uncomment to show hidden chars
 "set list
+" configure hidden chars
 set listchars=trail:⋅,nbsp:⋅,tab:▸\ ,eol:¬
 
 " highlight extra whitespace
@@ -140,13 +141,10 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 
-" auto-strip trailing white space for ruby files
-" autocmd BufWritePre *.rb :call <SID>StripTrailingWhitespaces()
-
 " command to strip white space from any file
 nnoremap <leader>s :call <SID>StripTrailingWhitespaces()<cr>
 
-" When I close a tab, remove the buffer
+" Don't allow unwritten files to hang around in hidden 
 set nohidden
 
 " toggle tab-mirrored NERDTree with \n
