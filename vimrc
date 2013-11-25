@@ -181,4 +181,23 @@ set wildignore+=*/target/*
 " Supports a list like: ['jshint', 'jsl', 'gjslint', 'jslint', 'closurecompiler']
 let g:syntastic_javascript_checkers=['jshint']
 
+" Autoread only works in GUI Vim. This makes it work in
+" a terminal too.
+" See: http://stackoverflow.com/a/10962191
+set autoread
+augroup checktime
+    au!
+    if !has("gui_running")
+        "silent! necessary otherwise throws errors when using command
+        "line window.
+        autocmd BufEnter        * silent! checktime
+        autocmd CursorHold      * silent! checktime
+        autocmd CursorHoldI     * silent! checktime
+        "these two _may_ slow things down. Remove if they do.
+        autocmd CursorMoved     * silent! checktime
+        autocmd CursorMovedI    * silent! checktime
+    endif
+augroup END
+
+
 source ~/.vimstatus
