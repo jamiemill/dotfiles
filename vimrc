@@ -156,9 +156,12 @@ nnoremap <leader>md :w ! multimarkdown \| mdtools format --add-toc > /tmp/mdprev
 " re-select last pasted section
 nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 
-" cycle through buffers (<, >, full-stop and comma don't seem bindable)
-nnoremap <C-[> :bprev<cr>
-nnoremap <C-]> :bnext<cr>
+" cycle through buffers with VIM up/down keys whilst ctrl is pressed
+" note you can also use <C-^> to alternate with previous
+nnoremap <C-k> :bprev<cr>
+nnoremap <C-j> :bnext<cr>
+inoremap <C-k> <esc>:bprev<cr>
+inoremap <C-j> <esc>:bnext<cr>
 
 " find the current file in the nerdtree
 map <leader>f :NERDTreeFind<cr>
