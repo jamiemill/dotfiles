@@ -161,16 +161,6 @@ nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 " find the current file in the nerdtree
 map <leader>f :NERDTreeFind<cr>
 
-" Disable arrow keys for learing purposes
-inoremap  <Up>     <NOP>
-inoremap  <Down>   <NOP>
-inoremap  <Left>   <NOP>
-inoremap  <Right>  <NOP>
-noremap   <Up>     <NOP>
-noremap   <Down>   <NOP>
-noremap   <Left>   <NOP>
-noremap   <Right>  <NOP>
-
 " Customise ctrl-p ignored files
 set wildignore+=*/.git/*,*.so,*.swp,*.zip
 " ignore play framework build dir
