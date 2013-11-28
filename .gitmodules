@@ -90,7 +90,7 @@
 	url = https://github.com/int3/vim-taglist-plus.git
 [submodule "vim-plugins/snipmate"]
 	path = vim-plugins/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
+	url = https://github.com/garbas/vim-snipmate.git
 [submodule "vim-plugins/jellybeans"]
 	path = vim-plugins/jellybeans
 	url = https://github.com/nanotech/jellybeans.vim.git
@@ -106,3 +106,9 @@
 [submodule "vim-plugins/gitgutter"]
 	path = vim-plugins/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "vim-plugins/mw-utils"]
+	path = vim-plugins/mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "vim-plugins/tlib"]
+	path = vim-plugins/tlib
+	url = https://github.com/tomtom/tlib_vim.git
