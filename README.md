@@ -41,34 +41,43 @@ is hard-coded to look in ~/dotfiles/vim-plugins for its stuff.
 	cd dotfiles
 	./install.sh
 
-Vim
----
+Making changes
+--------------
+
+  1. Make the necessary changes
+  2. Commit and push back to GitHub
+
+Receiving changes
+-----------------
+
+  1. On all other machines run `./update.sh`. This will pull down the
+     latest version and re-run the installer.
+
+Maintenance
+-----------
+
+### Vim
 
 Adding a new plugin:
-- add the plugin as a submodule of this repo, inside `vim-plugins/`.
+  - add the plugin as a submodule of this repo, inside `vim-plugins/`.
 
-ZSH
----
+
+### ZSH
 
 Add custom plugins in `oh-my-zsh-custom/plugins` and then run `./install.sh` again
 to make it get copied to `oh-my-zsh/custom` where it will be found.
 
 Add custom themes to `oh-my-zsh-custom` and run `./install.sh` again.
 
-Maintenance
------------
 
-Updating all submodules to latest versions:
+### Fetching latest versions of submodules (e.g. Vim plugins)
 
-    ./update-plugins.sh
+    ./fetch-latest-plugins.sh
 
 Then if everything looks OK:
 
     git commit -a
     git push
 
-Receiving updates on other machines:
+Then run `./update.sh` on all other machines.
 
-    ./install.sh
-
-This will do a `git pull`, update submodules, and relink anything that should be linked.

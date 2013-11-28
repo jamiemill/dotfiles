@@ -5,17 +5,12 @@ set -e
 # NOTE: must run this from the containg directory.
 
 ##################################################
-# Update this thing
+# Update submodules to the versions referenced
+# by this git repo.
 ##################################################
 
 echo ""
-echo "Updating this repo..."
-echo ""
-
-git pull
-
-echo ""
-echo "Updating submodules..."
+echo "Syncronising submodules..."
 echo ""
 
 git submodule init
