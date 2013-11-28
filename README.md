@@ -81,3 +81,14 @@ Then if everything looks OK:
 
 Then run `./update.sh` on all other machines.
 
+### Replacing a submodule with a different version
+
+  1. edit .gitmodules to change the URL of the submodule
+  2. run `git submodule sync` which will update the internal location
+     references or something
+  3. `cd {submodule dir}`
+  4. `git fetch && git reset --hard origin/master`
+  5. `cd -`
+  6. `git add .gitmodules {submodule dir}`
+  7. commit and push
+
