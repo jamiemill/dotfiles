@@ -176,6 +176,10 @@ set wildignore+=*/target/*
 " Supports a list like: ['jshint', 'jsl', 'gjslint', 'jslint', 'closurecompiler']
 let g:syntastic_javascript_checkers=['jshint']
 
+" Disable automatic checking of HTML files. `tidy` is too old and the
+" integration seems broken now, at least with the version on my mac.
+let g:syntastic_html_checkers=[]
+
 " Autoread only works in GUI Vim. This makes it work in
 " a terminal too.
 " See: http://stackoverflow.com/a/10962191
