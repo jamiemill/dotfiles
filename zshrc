@@ -40,8 +40,18 @@ source $ZSH/oh-my-zsh.sh
 
 export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
 
-# Customize to your needs...
-export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+path=(
+  /usr/local/share/npm/bin
+  /usr/local/bin
+  /usr/bin
+  /bin
+  /usr/local/sbin
+  /usr/sbin
+  /sbin
+  /usr/X11/bin
+)
+export path
+
 
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
