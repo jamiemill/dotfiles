@@ -46,15 +46,15 @@ done
 
 
 ##################################################
-# Link the snipmate snippets dir
+# Link the custom UltiSnips dir
 ##################################################
 
 echo ""
-echo "Linking custom snipmate snippets..."
+echo "Linking custom UltiSnip snippets..."
 echo ""
 
 DOTVIMDIR="$HOME/.vim"
-SNIPPETSDIR="$DOTVIMDIR/snippets"
+SNIPPETSDIR="$DOTVIMDIR/UltiSnips"
 
 if [ ! -d $DOTVIMDIR ]; then
 	echo "ERROR: ~/.vim does not exist yet - you must not have installed pathogen"
@@ -67,7 +67,7 @@ if [ -d $SNIPPETSDIR ]; then
 fi
 
 echo "> Linking $SNIPPETSDIR"
-ln -s "$PWD/vim-snippets" $SNIPPETSDIR
+ln -s "$PWD/UltiSnips" $SNIPPETSDIR
 
 
 ##################################################
