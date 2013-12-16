@@ -13,6 +13,7 @@ echo ""
 echo "Syncronising submodules..."
 echo ""
 
+git submodule sync
 git submodule init
 git submodule update
 
