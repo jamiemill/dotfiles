@@ -67,3 +67,7 @@ function mkcd {
     mkdir -p $1 && cd $1
   fi
 }
+
+# turn off annoying autocorrect
+unsetopt correctall
+
