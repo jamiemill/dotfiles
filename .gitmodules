@@ -112,3 +112,6 @@
 [submodule "vim-plugins/ultisnip"]
 	path = vim-plugins/ultisnip
 	url = https://github.com/SirVer/ultisnips.git
+[submodule "vim-plugins/monokai"]
+	path = vim-plugins/monokai
+	url = https://github.com/sickill/vim-monokai.git

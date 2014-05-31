@@ -1,7 +1,7 @@
 " NOTE: a lot of this is pinched from Janus.
 
 " Load plugins pathogen-style.
-call pathogen#infect('~/dotfiles/vim-plugins')
+call pathogen#infect('~/dotfiles/vim-plugins/{}')
 
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -64,7 +64,8 @@ set t_Co=256
 " Colour schemes I like:
 "colorscheme molokai
 "colorscheme wombat256mod
-colorscheme Tomorrow-Night
+"colorscheme Tomorrow-Night
+colorscheme monokai
 
 " solarized
 " the only way to use it in terminal 'properly' is to also load
