@@ -115,3 +115,6 @@
 [submodule "vim-plugins/monokai"]
 	path = vim-plugins/monokai
 	url = https://github.com/sickill/vim-monokai.git
+[submodule "vim-plugins/hilinktrace"]
+	path = vim-plugins/hilinktrace
+	url = https://github.com/gerw/vim-HiLinkTrace.git
