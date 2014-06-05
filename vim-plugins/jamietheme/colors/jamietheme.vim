@@ -59,6 +59,10 @@ hi GitGutterChange       guifg=#CC6600 ctermfg=166  guibg=#222222 ctermbg=235  g
 hi GitGutterDelete       guifg=#FF2255 ctermfg=197  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
 hi GitGutterChangeDelete guifg=#CC6600 ctermfg=166  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
 hi Search                guifg=#222222 ctermfg=235  guibg=#BBBB22 ctermbg=142  gui=NONE cterm=NONE
+hi MatchParen            guifg=#222222 ctermfg=235  guibg=#999900 ctermbg=100  gui=NONE cterm=NONE
+hi Visual                guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
+hi StatusLine            guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
+hi VertSplit             guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
 
 hi link vimFold     Folded
 hi link FoldColumn  Folded

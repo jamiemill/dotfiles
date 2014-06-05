@@ -5,6 +5,7 @@ orange = "c60"
 grey = "444"
 blue = "24f"
 darkgrey = "222"
+highlight = "bb2"
 
 # Comment
 
@@ -74,7 +75,13 @@ vim_colors "jamietheme" do
   GitGutterDelete pink, darkgrey
   GitGutterChangeDelete orange, darkgrey
 
-  Search darkgrey, "bb2"
+  Search darkgrey, highlight
+  MatchParen darkgrey, "990"
+
+  Visual :bg => grey
+
+  StatusLine :bg => darkgrey
+  VertSplit :bg => darkgrey
 
 end
 
