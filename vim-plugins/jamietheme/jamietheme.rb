@@ -4,6 +4,7 @@ turquoise = "0aa"
 orange = "c60"
 grey = "444"
 blue = "24f"
+darkgrey = "222"
 
 # Comment
 
@@ -17,9 +18,9 @@ vim_colors "jamietheme" do
 
   Normal "999", "111"
 
-  Folded "808080", "ECECEC", :gui => "bold"
+  Folded "555", darkgrey, :gui => "bold"
   link :vimFold, :FoldColumn, :to => :Folded
-  LineNr grey, "222"
+  LineNr grey, darkgrey
 
   rubyControl lime
   rubySymbol pink
@@ -62,6 +63,18 @@ vim_colors "jamietheme" do
   cssClassName pink
   cssTagName lime
   cssBraces blue
+
+  DiffAdd lime, "333"
+  DiffChange :bg => grey
+  DiffDelete pink, "333"
+
+  SignColumn :bg => darkgrey
+  GitGutterAdd lime, darkgrey
+  GitGutterChange orange, darkgrey
+  GitGutterDelete pink, darkgrey
+  GitGutterChangeDelete orange, darkgrey
+
+  Search darkgrey, "bb2"
 
 end
 
