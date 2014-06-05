@@ -146,6 +146,18 @@ endfun
 " command to strip white space from any file
 nnoremap <leader>s :call <SID>StripTrailingWhitespaces()<cr>
 
+
+" function to regenerate and reload jamie's colorscheme
+fun! <SID>RegenerateJamieColorscheme()
+    !~/dotfiles/vim-plugins/jamietheme/regenerate.sh
+    source ~/dotfiles/vim-plugins/jamietheme/colors/jamietheme.vim
+endfun
+" command to call RegenerateJamieColorscheme
+nnoremap <leader>rjcs :call <SID>RegenerateJamieColorscheme()<cr>
+
+" open jamie colorscheme for editing
+nnoremap <leader>jcs :e ~/dotfiles/vim-plugins/jamietheme/jamietheme.rb<cr>
+
 " Don't allow unwritten files to hang around in hidden 
 set nohidden
 
