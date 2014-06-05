@@ -65,7 +65,8 @@ set t_Co=256
 "colorscheme molokai
 "colorscheme wombat256mod
 "colorscheme Tomorrow-Night
-colorscheme monokai
+"colorscheme monokai
+colorscheme jamietheme
 
 " solarized
 " the only way to use it in terminal 'properly' is to also load
