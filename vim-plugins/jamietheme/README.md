@@ -1,9 +1,10 @@
 # My VIM Theme
 
-To regenerate, run:
+Regeneration requires the `palette` rubygem:
 
-    vim-pluginc/jamietheme/regenerate.sh
+    gem install palette
 
-Then in VIM:
+To regenerate and reload, run this in vim:
 
+    :!vim-plugins/jamietheme/regenerate.sh
     :source vim-plugins/jamietheme/colors/jamietheme.vim
