@@ -4,11 +4,11 @@ turquoise = "0aa"
 orange = "c60"
 grey = "444"
 blue = "24f"
-white = "fff"
 
 # Comment
 
-vim_colors "jamie" do
+vim_colors "jamietheme" do
+
   author "Jamie Mill"
   notes  "Jamie's theme"
 
@@ -26,7 +26,8 @@ vim_colors "jamie" do
   Comment grey
   rubyComment grey
 
-  Statement orange
+  Statement pink
+  PreProc  blue
   Boolean orange
   rubyBoolean orange
   Number lime
@@ -44,7 +45,6 @@ vim_colors "jamie" do
   jsFuncParens blue
   jsFuncBraces blue
 
-  #jsFuncCall lime
   jsParens lime
 
   jsBraces pink
@@ -52,8 +52,8 @@ vim_colors "jamie" do
   jsObjectKey pink
 
   link :htmlTagName, :to => :Normal
-  htmlTag blue
-  htmlEndTag blue
+  htmlTag grey
+  link :htmlEndTag, :to => :htmlTag
   htmlSpecialTagName blue
   htmlArg blue
   htmlTitle pink
@@ -62,7 +62,6 @@ vim_colors "jamie" do
   cssClassName pink
   cssTagName lime
   cssBraces blue
-  
 
 end
 

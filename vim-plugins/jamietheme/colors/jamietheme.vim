@@ -12,7 +12,7 @@ if version > 580
     endif
 endif
 
-let colors_name="jamie"
+let colors_name="jamietheme"
 
 if has("gui_running")
     set background=dark
@@ -25,7 +25,8 @@ hi rubyControl         guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi rubySymbol          guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi Comment             guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
 hi rubyComment         guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
-hi Statement           guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
+hi Statement           guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
+hi PreProc             guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
 hi Boolean             guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
 hi rubyBoolean         guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
 hi Number              guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
@@ -42,8 +43,7 @@ hi jsParens            guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi jsBraces            guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi jsFunctionKey       guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi jsObjectKey         guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
-hi htmlTag             guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
-hi htmlEndTag          guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
+hi htmlTag             guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
 hi htmlSpecialTagName  guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
 hi htmlArg             guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
 hi htmlTitle           guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
@@ -54,6 +54,7 @@ hi cssBraces           guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
 hi link vimFold     Folded
 hi link FoldColumn  Folded
 hi link htmlTagName Normal
+hi link htmlEndTag  htmlTag
 hi link htmlH1      htmlTitle
 hi link htmlH2      htmlTitle
 hi link htmlH3      htmlTitle
