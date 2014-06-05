@@ -42,8 +42,13 @@ vim_colors "jamie" do
   rubyConstant blue
   jsFuncParens blue
   jsFuncBraces blue
-  #jsFuncCall pink
-  jsParens pink
+
+  #jsFuncCall lime
+  jsParens lime
+
+  jsBraces pink
+  jsFunctionKey pink
+  jsObjectKey pink
 
 end
 

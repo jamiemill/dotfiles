@@ -38,7 +38,10 @@ hi Type                guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
 hi rubyConstant        guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
 hi jsFuncParens        guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
 hi jsFuncBraces        guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
-hi jsParens            guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
+hi jsParens            guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
+hi jsBraces            guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
+hi jsFunctionKey       guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
+hi jsObjectKey         guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 
 hi link vimFold    Folded
 hi link FoldColumn Folded
