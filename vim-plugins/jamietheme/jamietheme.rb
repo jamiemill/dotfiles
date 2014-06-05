@@ -4,6 +4,7 @@ turquoise = "0aa"
 orange = "c60"
 grey = "444"
 blue = "24f"
+white = "fff"
 
 # Comment
 
@@ -49,6 +50,19 @@ vim_colors "jamie" do
   jsBraces pink
   jsFunctionKey pink
   jsObjectKey pink
+
+  link :htmlTagName, :to => :Normal
+  htmlTag blue
+  htmlEndTag blue
+  htmlSpecialTagName blue
+  htmlArg blue
+  htmlTitle pink
+  link :htmlH1, :htmlH2, :htmlH3, :htmlH4, :htmlH5, :htmlH6, :to => :htmlTitle
+
+  cssClassName pink
+  cssTagName lime
+  cssBraces blue
+  
 
 end
 

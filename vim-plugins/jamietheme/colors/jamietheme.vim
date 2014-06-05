@@ -42,6 +42,21 @@ hi jsParens            guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi jsBraces            guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi jsFunctionKey       guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi jsObjectKey         guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
+hi htmlTag             guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
+hi htmlEndTag          guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
+hi htmlSpecialTagName  guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
+hi htmlArg             guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
+hi htmlTitle           guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
+hi cssClassName        guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
+hi cssTagName          guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
+hi cssBraces           guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
 
-hi link vimFold    Folded
-hi link FoldColumn Folded
+hi link vimFold     Folded
+hi link FoldColumn  Folded
+hi link htmlTagName Normal
+hi link htmlH1      htmlTitle
+hi link htmlH2      htmlTitle
+hi link htmlH3      htmlTitle
+hi link htmlH4      htmlTitle
+hi link htmlH5      htmlTitle
+hi link htmlH6      htmlTitle
