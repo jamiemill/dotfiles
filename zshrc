@@ -49,6 +49,7 @@ path=(
   /usr/sbin
   /sbin
   /usr/X11/bin
+  /usr/local/opt/ruby/bin
 )
 export path
 
