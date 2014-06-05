@@ -5,6 +5,17 @@ set -e
 # NOTE: must run this from the containg directory.
 
 ##################################################
+# Install/update pathogen
+##################################################
+
+echo ""
+echo "Installing pathogen..."
+echo ""
+
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+##################################################
 # Update submodules to the versions referenced
 # by this git repo.
 ##################################################
