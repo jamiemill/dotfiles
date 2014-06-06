@@ -6,6 +6,7 @@ grey = "444"
 blue = "24f"
 darkgrey = "222"
 highlight = "bb2"
+white = "fff"
 
 # Comment
 
@@ -32,26 +33,27 @@ vim_colors "jamietheme" do
   PreProc  blue
   Boolean orange
   rubyBoolean orange
-  Number lime
+  Number orange
 
 
-  Constant turquoise
-  rubyString turquoise
-  rubyStringDelimiter turquoise
+  Constant pink
+  rubyString pink
+  rubyStringDelimiter pink
 
-  Special pink
+  Special white
   Operator lime
 
   Type blue
   rubyConstant blue
-  jsFuncParens blue
-  jsFuncBraces blue
+  jsFuncParens grey
+  jsFuncBraces grey
+  jsFunction grey
 
   jsParens lime
 
-  jsBraces pink
-  jsFunctionKey pink
-  jsObjectKey pink
+  jsBraces white
+  jsFunctionKey white
+  jsObjectKey white
   jsThis grey
 
   link :htmlTagName, :to => :Normal
@@ -62,7 +64,7 @@ vim_colors "jamietheme" do
   htmlTitle pink
   link :htmlH1, :htmlH2, :htmlH3, :htmlH4, :htmlH5, :htmlH6, :to => :htmlTitle
 
-  cssClassName pink
+  cssClassName white
   link :lessClass, :to => :cssClassName
   cssTagName lime
   cssBraces blue
