@@ -1,7 +1,7 @@
 #!/bin/sh
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# Must be run from the theme directory
 
 echo Regenerating...
-palette "$DIR/jamietheme.rb" > "$DIR/colors/jamietheme.vim"
+palette jamietheme.rb > colors/jamietheme.vim
 echo Done.

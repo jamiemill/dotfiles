@@ -28,7 +28,7 @@ vim_colors "jamietheme" do
   Comment grey
   rubyComment grey
 
-  Statement pink
+  Statement lime
   PreProc  blue
   Boolean orange
   rubyBoolean orange
@@ -52,6 +52,7 @@ vim_colors "jamietheme" do
   jsBraces pink
   jsFunctionKey pink
   jsObjectKey pink
+  jsThis grey
 
   link :htmlTagName, :to => :Normal
   htmlTag grey

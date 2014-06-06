@@ -18,14 +18,14 @@ if has("gui_running")
     set background=dark
 endif
 
-hi Normal                guifg=#999999 ctermfg=247  guibg=#111111 ctermbg=233  gui=NONE cterm=NONE
+hi Normal                guifg=#999999 ctermfg=246  guibg=#111111 ctermbg=233  gui=NONE cterm=NONE
 hi Folded                guifg=#555555 ctermfg=240  guibg=#222222 ctermbg=235  gui=BOLD cterm=BOLD
 hi LineNr                guifg=#444444 ctermfg=238  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
 hi rubyControl           guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi rubySymbol            guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi Comment               guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
 hi rubyComment           guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
-hi Statement             guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
+hi Statement             guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi PreProc               guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
 hi Boolean               guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
 hi rubyBoolean           guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
@@ -43,6 +43,7 @@ hi jsParens              guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi jsBraces              guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi jsFunctionKey         guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi jsObjectKey           guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
+hi jsThis                guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
 hi htmlTag               guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
 hi htmlSpecialTagName    guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
 hi htmlArg               guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
