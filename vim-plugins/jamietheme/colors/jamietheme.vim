@@ -34,6 +34,7 @@ hi Constant              guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi rubyString            guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi rubyStringDelimiter   guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi Special               guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
+hi Identifier            guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi Operator              guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi Type                  guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
 hi rubyConstant          guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE

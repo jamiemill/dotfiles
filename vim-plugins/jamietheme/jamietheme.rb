@@ -41,6 +41,7 @@ vim_colors "jamietheme" do
   rubyStringDelimiter pink
 
   Special white
+  Identifier white
   Operator lime
 
   Type blue
