@@ -39,7 +39,7 @@ vim_colors "jamietheme" do
   rubyString turquoise
   rubyStringDelimiter turquoise
 
-  Special grey
+  Special pink
   Operator lime
 
   Type blue
@@ -62,6 +62,7 @@ vim_colors "jamietheme" do
   link :htmlH1, :htmlH2, :htmlH3, :htmlH4, :htmlH5, :htmlH6, :to => :htmlTitle
 
   cssClassName pink
+  link :lessClass, :to => :cssClassName
   cssTagName lime
   cssBraces blue
 

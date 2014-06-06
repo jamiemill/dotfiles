@@ -18,7 +18,7 @@ if has("gui_running")
     set background=dark
 endif
 
-hi Normal                guifg=#999999 ctermfg=246  guibg=#111111 ctermbg=233  gui=NONE cterm=NONE
+hi Normal                guifg=#999999 ctermfg=247  guibg=#111111 ctermbg=233  gui=NONE cterm=NONE
 hi Folded                guifg=#555555 ctermfg=240  guibg=#222222 ctermbg=235  gui=BOLD cterm=BOLD
 hi LineNr                guifg=#444444 ctermfg=238  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
 hi rubyControl           guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
@@ -33,7 +33,7 @@ hi Number                guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi Constant              guifg=#00AAAA ctermfg=37   gui=NONE cterm=NONE
 hi rubyString            guifg=#00AAAA ctermfg=37   gui=NONE cterm=NONE
 hi rubyStringDelimiter   guifg=#00AAAA ctermfg=37   gui=NONE cterm=NONE
-hi Special               guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
+hi Special               guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi Operator              guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi Type                  guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
 hi rubyConstant          guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
@@ -74,3 +74,4 @@ hi link htmlH3      htmlTitle
 hi link htmlH4      htmlTitle
 hi link htmlH5      htmlTitle
 hi link htmlH6      htmlTitle
+hi link lessClass   cssClassName
