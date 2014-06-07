@@ -22,6 +22,9 @@ hi Normal                   guifg=#999999 ctermfg=246  guibg=#111111 ctermbg=233
 hi Folded                   guifg=#555555 ctermfg=240  guibg=#222222 ctermbg=235  gui=BOLD cterm=BOLD
 hi LineNr                   guifg=#222222 ctermfg=235  gui=NONE cterm=NONE
 hi NonText                  guifg=#222222 ctermfg=235  gui=NONE cterm=NONE
+hi TabLine                  guifg=#444444 ctermfg=238  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
+hi TabLineSel               guifg=#444444 ctermfg=238  guibg=#111111 ctermbg=233  gui=NONE cterm=NONE
+hi TabLineFill              guifg=#222222 ctermfg=235  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
 hi rubyControl              guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi rubySymbol               guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi Comment                  guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
@@ -67,7 +70,8 @@ hi GitGutterChangeDelete    guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
 hi Search                   guifg=#222222 ctermfg=235  guibg=#BBBB22 ctermbg=142  gui=NONE cterm=NONE
 hi MatchParen               guifg=#222222 ctermfg=235  guibg=#999900 ctermbg=100  gui=NONE cterm=NONE
 hi Visual                   guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
-hi StatusLine               guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
+hi StatusLine               guifg=#999999 ctermfg=246  guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
+hi StatusLineNC             guifg=#444444 ctermfg=238  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
 hi VertSplit                guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
 
 hi link vimFold     Folded

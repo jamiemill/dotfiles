@@ -1,13 +1,14 @@
+almostblack = "111"
+darkgrey = "222"
+grey = "444"
+lightgrey = "999"
+white = "fff"
+
 pink = "f25"
 lime = "3d2"
 orange = "c60"
-grey = "444"
 blue = "24f"
-darkgrey = "222"
 highlight = "bb2"
-white = "fff"
-almostblack = "111"
-lightgrey = "999"
 
 vim_colors "jamietheme" do
 
@@ -23,6 +24,9 @@ vim_colors "jamietheme" do
   link :vimFold, :FoldColumn, :to => :Folded
   LineNr darkgrey
   NonText darkgrey
+  TabLine grey, darkgrey
+  TabLineSel grey, almostblack
+  TabLineFill darkgrey, darkgrey
 
   rubyControl lime
   rubySymbol pink
@@ -39,7 +43,6 @@ vim_colors "jamietheme" do
   Constant pink
   rubyString pink
   rubyStringDelimiter pink
-
   Special white
   Identifier white
   Operator lime
@@ -88,7 +91,8 @@ vim_colors "jamietheme" do
 
   Visual :bg => grey
 
-  StatusLine :bg => darkgrey
+  StatusLine lightgrey, grey
+  StatusLineNC grey, darkgrey
   VertSplit :bg => darkgrey
 
 end
