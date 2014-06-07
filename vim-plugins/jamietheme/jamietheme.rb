@@ -7,8 +7,7 @@ blue = "24f"
 darkgrey = "222"
 highlight = "bb2"
 white = "fff"
-
-# Comment
+almostblack = "111"
 
 vim_colors "jamietheme" do
 
@@ -18,11 +17,11 @@ vim_colors "jamietheme" do
   reset      true
   background :dark
 
-  Normal "999", "111"
+  Normal "999", almostblack
 
   Folded "555", darkgrey, :gui => "bold"
   link :vimFold, :FoldColumn, :to => :Folded
-  LineNr grey, darkgrey
+  LineNr darkgrey
 
   rubyControl lime
   rubySymbol pink
@@ -74,11 +73,11 @@ vim_colors "jamietheme" do
   DiffChange :bg => grey
   DiffDelete pink, "333"
 
-  SignColumn :bg => darkgrey
-  GitGutterAdd lime, darkgrey
-  GitGutterChange orange, darkgrey
-  GitGutterDelete pink, darkgrey
-  GitGutterChangeDelete orange, darkgrey
+  SignColumn :bg => almostblack
+  GitGutterAdd lime
+  GitGutterChange orange
+  GitGutterDelete pink
+  GitGutterChangeDelete orange
 
   Search darkgrey, highlight
   MatchParen darkgrey, "990"
