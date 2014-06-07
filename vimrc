@@ -206,4 +206,7 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
+" Clear search highlights in normal mode by hitting return
+nnoremap <cr> :noh<cr>
+
 source ~/.vimstatus
