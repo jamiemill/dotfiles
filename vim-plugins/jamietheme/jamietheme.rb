@@ -1,6 +1,5 @@
 pink = "f25"
 lime = "3d2"
-turquoise = "0aa"
 orange = "c60"
 grey = "444"
 blue = "24f"
@@ -8,6 +7,7 @@ darkgrey = "222"
 highlight = "bb2"
 white = "fff"
 almostblack = "111"
+lightgrey = "999"
 
 vim_colors "jamietheme" do
 
@@ -17,11 +17,12 @@ vim_colors "jamietheme" do
   reset      true
   background :dark
 
-  Normal "999", almostblack
+  Normal lightgrey, almostblack
 
   Folded "555", darkgrey, :gui => "bold"
   link :vimFold, :FoldColumn, :to => :Folded
   LineNr darkgrey
+  NonText darkgrey
 
   rubyControl lime
   rubySymbol pink
@@ -61,13 +62,16 @@ vim_colors "jamietheme" do
   link :htmlEndTag, :to => :htmlTag
   htmlSpecialTagName blue
   htmlArg blue
-  htmlTitle pink
+  htmlString lightgrey
+  htmlTitle white
   link :htmlH1, :htmlH2, :htmlH3, :htmlH4, :htmlH5, :htmlH6, :to => :htmlTitle
 
   cssClassName white
   link :lessClass, :to => :cssClassName
   cssTagName lime
   cssBraces blue
+
+  markdownHeadingDelimiter pink
 
   DiffAdd lime, "333"
   DiffChange :bg => grey
