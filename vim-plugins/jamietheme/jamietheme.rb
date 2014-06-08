@@ -104,5 +104,6 @@ vim_colors "jamietheme" do
 
   CtrlPMatch darkgrey, highlight, :gui => "bold"
   CursorLine darkgrey, subduedhighlight
+  CtrlPPrtCursor :gui => "reverse"
 
 end

@@ -79,6 +79,7 @@ hi PmenuSbar                guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
 hi PmenuThumb               guibg=#999999 ctermbg=246  gui=NONE cterm=NONE
 hi CtrlPMatch               guifg=#222222 ctermfg=235  guibg=#BBBB22 ctermbg=142  gui=BOLD cterm=BOLD
 hi CursorLine               guifg=#222222 ctermfg=235  guibg=#888800 ctermbg=100  gui=NONE cterm=NONE
+hi CtrlPPrtCursor           gui=REVERSE cterm=REVERSE
 
 hi link vimFold     Folded
 hi link FoldColumn  Folded
