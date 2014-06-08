@@ -68,11 +68,17 @@ hi GitGutterChange          guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
 hi GitGutterDelete          guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi GitGutterChangeDelete    guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
 hi Search                   guifg=#222222 ctermfg=235  guibg=#BBBB22 ctermbg=142  gui=NONE cterm=NONE
-hi MatchParen               guifg=#222222 ctermfg=235  guibg=#999900 ctermbg=100  gui=NONE cterm=NONE
-hi Visual                   guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
-hi StatusLine               guifg=#999999 ctermfg=246  guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
+hi MatchParen               guifg=#222222 ctermfg=235  guibg=#888800 ctermbg=100  gui=NONE cterm=NONE
+hi Visual                   guifg=#999999 ctermfg=246  guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
+hi StatusLine               guifg=#999999 ctermfg=246  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
 hi StatusLineNC             guifg=#444444 ctermfg=238  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
 hi VertSplit                guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
+hi Pmenu                    guifg=#555555 ctermfg=240  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
+hi PmenuSel                 guifg=#222222 ctermfg=235  guibg=#BBBB22 ctermbg=142  gui=NONE cterm=NONE
+hi PmenuSbar                guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
+hi PmenuThumb               guibg=#999999 ctermbg=246  gui=NONE cterm=NONE
+hi CtrlPMatch               guifg=#222222 ctermfg=235  guibg=#BBBB22 ctermbg=142  gui=BOLD cterm=BOLD
+hi CursorLine               guifg=#222222 ctermfg=235  guibg=#888800 ctermbg=100  gui=NONE cterm=NONE
 
 hi link vimFold     Folded
 hi link FoldColumn  Folded
@@ -85,3 +91,4 @@ hi link htmlH4      htmlTitle
 hi link htmlH5      htmlTitle
 hi link htmlH6      htmlTitle
 hi link lessClass   cssClassName
+hi link Wildmenu    Search

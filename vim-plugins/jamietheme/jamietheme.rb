@@ -9,6 +9,7 @@ lime = "3d2"
 orange = "c60"
 blue = "24f"
 highlight = "bb2"
+subduedhighlight = "880"
 
 vim_colors "jamietheme" do
 
@@ -87,13 +88,21 @@ vim_colors "jamietheme" do
   GitGutterChangeDelete orange
 
   Search darkgrey, highlight
-  MatchParen darkgrey, "990"
+  MatchParen darkgrey, subduedhighlight
 
-  Visual :bg => grey
+  Visual lightgrey, grey
 
-  StatusLine lightgrey, grey
+  StatusLine lightgrey, darkgrey
   StatusLineNC grey, darkgrey
   VertSplit :bg => darkgrey
 
-end
+  Pmenu "555", darkgrey
+  PmenuSel darkgrey, highlight # I want this to link to search but that doesn't work, so state explicitly.
+  PmenuSbar :bg => grey
+  PmenuThumb :bg => lightgrey
+  link :Wildmenu, :to => :Search
 
+  CtrlPMatch darkgrey, highlight, :gui => "bold"
+  CursorLine darkgrey, subduedhighlight
+
+end
