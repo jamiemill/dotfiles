@@ -88,6 +88,7 @@ vim_colors "jamietheme" do
   GitGutterChangeDelete orange
 
   Search darkgrey, highlight
+  IncSearch darkgrey, subduedhighlight
   MatchParen darkgrey, subduedhighlight
 
   Visual lightgrey, grey

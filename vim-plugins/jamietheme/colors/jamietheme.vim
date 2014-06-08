@@ -68,6 +68,7 @@ hi GitGutterChange          guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
 hi GitGutterDelete          guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi GitGutterChangeDelete    guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
 hi Search                   guifg=#222222 ctermfg=235  guibg=#BBBB22 ctermbg=142  gui=NONE cterm=NONE
+hi IncSearch                guifg=#222222 ctermfg=235  guibg=#888800 ctermbg=100  gui=NONE cterm=NONE
 hi MatchParen               guifg=#222222 ctermfg=235  guibg=#888800 ctermbg=100  gui=NONE cterm=NONE
 hi Visual                   guifg=#999999 ctermfg=246  guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
 hi StatusLine               guifg=#999999 ctermfg=246  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
