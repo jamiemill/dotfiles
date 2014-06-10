@@ -70,9 +70,6 @@
 [submodule "vim-plugins/autoclose-tag"]
 	path = vim-plugins/autoclose-tag
 	url = https://github.com/karuna/HTML-AutoCloseTag.git
-[submodule "vim-plugins/autoclose"]
-	path = vim-plugins/autoclose
-	url = https://github.com/Townk/vim-autoclose.git
 [submodule "vim-plugins/less"]
 	path = vim-plugins/less
 	url = https://github.com/groenewege/vim-less
@@ -118,3 +115,6 @@
 [submodule "vim-plugins/hilinktrace"]
 	path = vim-plugins/hilinktrace
 	url = https://github.com/gerw/vim-HiLinkTrace.git
+[submodule "vim-plugins/delimitmate"]
+	path = vim-plugins/delimitmate
+	url = https://github.com/Raimondi/delimitMate.git

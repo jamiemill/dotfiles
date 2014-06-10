@@ -209,4 +209,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 " Clear search highlights in normal mode by hitting return
 nnoremap <cr> :noh<cr>
 
+" Auto-insert an indent after a new line between autoclosed braces.
+let g:delimitMate_expand_cr=1
+
 source ~/.vimstatus
