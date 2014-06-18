@@ -72,3 +72,12 @@ function mkcd {
 # turn off annoying autocorrect
 unsetopt correctall
 
+# Connect to an IE VM at TIM Group. Defaults to IE8 but can take a version number as an argument, e.g. `ie 7`.
+function ie() {
+    VNCBIN="/Applications/Chicken of the VNC.app/Contents/MacOS/Chicken of the VNC"
+    JOB="http://jenkins.youdevise.com/job/qa-browsers-vnc-report/lastBuild/logText/progressiveText"
+    TARGET=$(curl -s $JOB | grep qa-ie${1:-"8"}-001 | rev | cut -d " " -f 1 | rev)
+    "$VNCBIN" $TARGET
+}
+
+
