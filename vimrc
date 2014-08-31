@@ -108,7 +108,7 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.ctp  setfiletype php
 	autocmd BufNewFile,BufRead *.ldg,*.ledger setf ledger | comp ledger
 	" Enable soft-wrapping for text files
-	autocmd FileType text,markdown setlocal wrap linebreak nolist
+	autocmd FileType text,markdown setlocal wrap linebreak nolist textwidth=80
 endif
 
 "Disable auto-folding of loaded files
