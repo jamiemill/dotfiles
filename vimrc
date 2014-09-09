@@ -159,6 +159,9 @@ nnoremap <leader>md :w ! multimarkdown \| mdtools format --add-toc > /tmp/mdprev
 " re-select last pasted section
 nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 
+" JSON pretty-print the visual selection
+vnoremap <leader>j :! python -m json.tool<cr>
+
 " cycle through buffers with VIM up/down keys whilst ctrl is pressed
 " note you can also use <C-^> to alternate with previous
 nnoremap <C-k> :bprev<cr>
