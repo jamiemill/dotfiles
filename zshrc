@@ -16,6 +16,8 @@ ZSH_THEME="jamie"
 # but only if the command `mvim` exists
 command -v mvim > /dev/null && alias vim="mvim -v"
 
+alias v="vim ."
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
