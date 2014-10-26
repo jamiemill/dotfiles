@@ -118,3 +118,6 @@
 [submodule "vim-plugins/delimitmate"]
 	path = vim-plugins/delimitmate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule "vim-plugins/jsx"]
+	path = vim-plugins/jsx
+	url = https://github.com/mxw/vim-jsx.git
