@@ -78,7 +78,7 @@ unsetopt correctall
 function ie() {
     VNCBIN="/Applications/Chicken of the VNC.app/Contents/MacOS/Chicken of the VNC"
     JOB="http://jenkins.youdevise.com/job/qa-browsers-vnc-report/lastBuild/logText/progressiveText"
-    TARGET=$(curl -s $JOB | grep qa-ie${1:-"8"}-001 | rev | cut -d " " -f 1 | rev)
+    TARGET=$(curl -s $JOB | grep qa-a-ie${1:-"8"}-001 | rev | cut -d " " -f 1 | rev)
     "$VNCBIN" $TARGET
 }
 
