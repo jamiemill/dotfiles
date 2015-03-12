@@ -1,8 +1,35 @@
-#!/bin/sh
+#!/bin/zsh
 
 set -e
 
 # NOTE: must run this from the containg directory.
+
+##################################################
+# Install/update prezto
+##################################################
+
+echo ""
+echo "Setting up Prezto..."
+echo ""
+
+PREZTODIR="${ZDOTDIR:-$HOME}/.zprezto"
+if [ ! -d $PREZTODIR ]; then
+    git clone --recursive https://github.com/jamiemill/prezto.git $PREZTODIR
+fi
+cd $PREZTODIR
+git reset --hard HEAD
+git clean -f
+git pull
+cd -
+
+echo ""
+echo "Linking prezto and zsh files..."
+echo ""
+
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
 
 ##################################################
 # Install/update pathogen
