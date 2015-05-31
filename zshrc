@@ -41,6 +41,7 @@ plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 path=(
   /usr/local/share/npm/bin
