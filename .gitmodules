@@ -121,3 +121,6 @@
 [submodule "vim-plugins/jsx"]
 	path = vim-plugins/jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule "vim-plugins/vim-expand-region"]
+	path = vim-plugins/vim-expand-region
+	url = https://github.com/terryma/vim-expand-region.git
