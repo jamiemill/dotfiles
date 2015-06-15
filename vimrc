@@ -216,4 +216,12 @@ nnoremap <cr> :noh<cr>
 " Auto-insert an indent after a new line between autoclosed braces.
 let g:delimitMate_expand_cr=1
 
+" customise expand-region to include expanding around brackets, parentheses
+" and braces
+call expand_region#custom_text_objects({
+    \ 'a]' :1,
+    \ 'ab' :1,
+    \ 'aB' :1,
+    \ })
+
 source ~/.vimstatus
