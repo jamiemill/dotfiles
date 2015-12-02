@@ -59,7 +59,8 @@ Maintenance
 ### Vim
 
 Adding a new plugin:
-  - add the plugin as a submodule of this repo, inside `vim-plugins/`.
+  - add the plugin as a submodule of this repo, inside `vim-plugins/`, e.g.
+  `git submodule add https://github.com/mikewest/vimroom.git vim-plugins/vimroom`
 
 
 ### ZSH
