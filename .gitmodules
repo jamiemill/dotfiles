@@ -124,3 +124,6 @@
 [submodule "vim-plugins/vim-expand-region"]
 	path = vim-plugins/vim-expand-region
 	url = https://github.com/terryma/vim-expand-region.git
+[submodule "vim-plugins/vimroom"]
+	path = vim-plugins/vimroom
+	url = https://github.com/mikewest/vimroom.git
