@@ -115,7 +115,6 @@ endif
 set nofoldenable
 
 set autoindent
-set smartindent
 set smarttab
 set nowrap
 
