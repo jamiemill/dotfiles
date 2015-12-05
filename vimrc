@@ -223,4 +223,7 @@ call expand_region#custom_text_objects({
     \ 'aB' :1,
     \ })
 
+" yank/paste use the system clipboard
+set clipboard=unnamed
+
 source ~/.vimstatus
