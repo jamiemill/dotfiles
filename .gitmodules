@@ -124,6 +124,9 @@
 [submodule "vim-plugins/vim-expand-region"]
 	path = vim-plugins/vim-expand-region
 	url = https://github.com/terryma/vim-expand-region.git
-[submodule "vim-plugins/vimroom"]
-	path = vim-plugins/vimroom
-	url = https://github.com/mikewest/vimroom.git
+[submodule "vim-plugins/lightline"]
+	path = vim-plugins/lightline
+	url = https://github.com/itchyny/lightline.vim
+[submodule "vim-plugins/goyo"]
+	path = vim-plugins/goyo
+	url = https://github.com/junegunn/goyo.vim.git
