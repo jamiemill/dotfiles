@@ -37,7 +37,7 @@ echo ""
 echo "Linking dotfiles..."
 echo ""
 
-FILES="vimrc vimstatus tmux.conf bash_profile zshrc gitconfig"
+FILES="vimrc tmux.conf bash_profile zshrc gitconfig"
 
 for FILE in $FILES
 do
