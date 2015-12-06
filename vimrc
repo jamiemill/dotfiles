@@ -226,4 +226,7 @@ call expand_region#custom_text_objects({
 " yank/paste use the system clipboard
 set clipboard=unnamed
 
+autocmd! User GoyoEnter Limelight 0.8
+autocmd! User GoyoLeave Limelight!
+
 source ~/.vimstatus

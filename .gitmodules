@@ -130,3 +130,6 @@
 [submodule "vim-plugins/goyo"]
 	path = vim-plugins/goyo
 	url = https://github.com/junegunn/goyo.vim.git
+[submodule "vim-plugins/limelight"]
+	path = vim-plugins/limelight
+	url = https://github.com/junegunn/limelight.vim.git
