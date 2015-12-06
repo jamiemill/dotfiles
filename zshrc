@@ -55,10 +55,11 @@ path=(
 )
 export path
 
-
-# rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
+# chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+# use a local ruby
+chruby ruby 2.2.3
 
 # `mkcd` to `mkdir -p` and `cd` to it.
 function mkcd {

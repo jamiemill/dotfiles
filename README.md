@@ -30,6 +30,14 @@ For coffeescript support: https://github.com/lukaszkorecki/CoffeeTags
 Then ensure you run `source ~/.profile` in all open terminal windows,
 including those running vim, to get it to work.
 
+Uses ruby-install and chruby for ruby version management. Install with:
+    brew install ruby-install
+    brew install chruby
+
+Then if you need to install a gem, `gem install` can be used without sudo
+and won't be touching the system installation.
+
+
 Installation
 ------------
 
