@@ -65,6 +65,9 @@ Adding a new plugin:
 Disabling a plugin - append '~' to the plugin directory:
   - `mv vim-plugins/some-plugin vim-plugins/some-plugin~`
 
+Removing a plugin (since git v1.8.5.2):
+  - `git rm vim-plugins/some-plugin`
+
 ### ZSH
 
 Add custom plugins in `oh-my-zsh-custom/plugins` and then run `./install.sh` again
