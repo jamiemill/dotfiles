@@ -4,6 +4,10 @@ set -e
 
 # NOTE: must run this from the containg directory.
 
+# This is intended to be idempotent. It is used for initial setup as well as
+# subsequent updates. All commands should be runnable any time to if you make
+# changes.
+
 ##################################################
 # Install/update pathogen
 ##################################################
@@ -56,6 +60,12 @@ do
 	ln -s $SRC $DEST
 done
 
+# Make vim config available to nvim
+echo ""
+echo "Linking vim to nvim..."
+mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
+ln -shf ~/.vim $XDG_CONFIG_HOME/nvim
+ln -shf ~/.vimrc $XDG_CONFIG_HOME/nvim/init.vim
 
 ##################################################
 # Link the custom UltiSnips dir
