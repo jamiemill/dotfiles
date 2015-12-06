@@ -1,3 +1,6 @@
+require "./powerline_colours.rb"
+
+
 almostblack = "111"
 darkgrey = "222"
 grey = "444"
