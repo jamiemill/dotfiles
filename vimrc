@@ -79,7 +79,9 @@ colorscheme jamietheme
 
 "some stuff to get the mouse going in term
 set mouse=a
-set ttymouse=xterm2
+if !has('nvim')
+  set ttymouse=xterm2
+endif
 
 set noerrorbells
 set visualbell

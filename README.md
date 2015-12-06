@@ -62,6 +62,8 @@ Adding a new plugin:
   - add the plugin as a submodule of this repo, inside `vim-plugins/`, e.g.
   `git submodule add https://github.com/mikewest/vimroom.git vim-plugins/vimroom`
 
+Disabling a plugin - append '~' to the plugin directory:
+  - `mv vim-plugins/some-plugin vim-plugins/some-plugin~`
 
 ### ZSH
 
