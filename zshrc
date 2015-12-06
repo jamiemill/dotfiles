@@ -8,13 +8,12 @@ export ZSH=~/dotfiles/oh-my-zsh
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="jamie"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Use vim as my editor
+export VISUAL=/usr/bin/vim
 
-# use macvim in terminal mode instead of osx vim, so we have ruby support
-# but only if the command `mvim` exists
-command -v mvim > /dev/null && alias vim="mvim -v"
+# Replace vim with nvim if installed
+command -v nvim > /dev/null && alias vim="nvim"
+command -v nvim > /dev/null && export VISUAL=$(command -v nvim)
 
 alias v="vim ."
 
