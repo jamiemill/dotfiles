@@ -85,3 +85,6 @@
 [submodule "vim-plugins/polyglot"]
 	path = vim-plugins/polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
+[submodule "vim-plugins/markdown-folding"]
+	path = vim-plugins/markdown-folding
+	url = https://github.com/nelstrom/vim-markdown-folding.git
