@@ -61,21 +61,7 @@ filetype plugin indent on
 "for iterm2 in 256 colour mode
 set t_Co=256
 
-" Colour schemes I like:
-"colorscheme molokai
-"colorscheme wombat256mod
-"colorscheme Tomorrow-Night
-"colorscheme monokai
 colorscheme jamietheme
-
-" solarized
-" the only way to use it in terminal 'properly' is to also load
-" the solarized terminal theme and it will use the 16 ansi colours.
-" without doing this, you must set
-" let g:solarized_termcolors=256 to go into 'degraded' mode.
-" which might be better for pairing remotely.
-" set background=dark
-" colorscheme solarized
 
 "some stuff to get the mouse going in term
 set mouse=a
