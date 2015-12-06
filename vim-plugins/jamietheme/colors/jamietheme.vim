@@ -81,6 +81,13 @@ hi PmenuThumb               guibg=#999999 ctermbg=246  gui=NONE cterm=NONE
 hi CtrlPMatch               guifg=#222222 ctermfg=235  guibg=#BBBB22 ctermbg=142  gui=BOLD cterm=BOLD
 hi CursorLine               guifg=#222222 ctermfg=235  guibg=#888800 ctermbg=100  gui=NONE cterm=NONE
 hi CtrlPPrtCursor           gui=REVERSE cterm=REVERSE
+hi NERDTreeDir              guifg=#999999 ctermfg=246  gui=NONE cterm=NONE
+hi NERDTreeOpenable         guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
+hi NERDTreeClosable         guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
+hi NERDTreeFile             guifg=#666666 ctermfg=241  gui=NONE cterm=NONE
+hi NERDTreeExecFile         guifg=#666666 ctermfg=241  gui=NONE cterm=NONE
+hi NERDTreeUp               guifg=#222222 ctermfg=235  gui=NONE cterm=NONE
+hi NERDTreeCWD              guifg=#222222 ctermfg=235  gui=NONE cterm=NONE
 
 hi link vimFold     Folded
 hi link FoldColumn  Folded

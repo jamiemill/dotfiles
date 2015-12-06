@@ -1,6 +1,7 @@
 almostblack = "111"
 darkgrey = "222"
 grey = "444"
+midgrey = "666"
 lightgrey = "999"
 white = "fff"
 
@@ -106,5 +107,13 @@ vim_colors "jamietheme" do
   CtrlPMatch darkgrey, highlight, :gui => "bold"
   CursorLine darkgrey, subduedhighlight
   CtrlPPrtCursor :gui => "reverse"
+
+  NERDTreeDir lightgrey
+  NERDTreeOpenable grey
+  NERDTreeClosable lime
+  NERDTreeFile midgrey
+  NERDTreeExecFile midgrey
+  NERDTreeUp darkgrey
+  NERDTreeCWD darkgrey
 
 end
