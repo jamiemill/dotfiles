@@ -84,3 +84,6 @@ function ie() {
 }
 
 
+
+export NVM_DIR="/Users/jamiemill/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
