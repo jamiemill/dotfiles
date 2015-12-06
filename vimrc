@@ -167,7 +167,7 @@ set wildignore+=*/target/*
 " Specify which javascript syntax checker(s) to use with syntastic and in what
 " order.
 " Supports a list like: ['jshint', 'jsl', 'gjslint', 'jslint', 'closurecompiler']
-let g:syntastic_javascript_checkers=['jshint']
+let g:syntastic_javascript_checkers=['eslint']
 
 " Disable automatic checking of HTML files. `tidy` is too old and the
 " integration seems broken now, at least with the version on my mac.
