@@ -7,30 +7,6 @@
 [submodule "vim-plugins/vim-handlebars"]
 	path = vim-plugins/vim-handlebars
 	url = https://github.com/nono/vim-handlebars.git
-[submodule "vim-plugins/coffee-script"]
-	path = vim-plugins/coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "vim-plugins/javascript"]
-	path = vim-plugins/javascript
-	url = https://github.com/pangloss/vim-javascript.git
-[submodule "vim-plugins/cucumber"]
-	path = vim-plugins/cucumber
-	url = https://github.com/tpope/vim-cucumber.git
-[submodule "vim-plugins/markdown"]
-	path = vim-plugins/markdown
-	url = https://github.com/tpope/vim-markdown.git
-[submodule "vim-plugins/rails"]
-	path = vim-plugins/rails
-	url = https://github.com/tpope/vim-rails.git
-[submodule "vim-plugins/rspec"]
-	path = vim-plugins/rspec
-	url = https://github.com/skwp/vim-rspec.git
-[submodule "vim-plugins/scss"]
-	path = vim-plugins/scss
-	url = https://github.com/cakebaker/scss-syntax.vim.git
-[submodule "vim-plugins/ruby"]
-	path = vim-plugins/ruby
-	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "vim-plugins/css-color"]
 	path = vim-plugins/css-color
 	url = https://github.com/ap/vim-css-color
@@ -64,24 +40,15 @@
 [submodule "vim-plugins/nerdcommenter"]
 	path = vim-plugins/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "vim-plugins/php-html"]
-	path = vim-plugins/php-html
-	url = https://github.com/vim-scripts/php.vim-html-enhanced.git
 [submodule "vim-plugins/autoclose-tag"]
 	path = vim-plugins/autoclose-tag
 	url = https://github.com/karuna/HTML-AutoCloseTag.git
-[submodule "vim-plugins/less"]
-	path = vim-plugins/less
-	url = https://github.com/groenewege/vim-less
 [submodule "vim-plugins/nerdtree-tabs"]
 	path = vim-plugins/nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = git@github.com:robbyrussell/oh-my-zsh.git
-[submodule "vim-plugins/scala"]
-	path = vim-plugins/scala
-	url = https://github.com/derekwyatt/vim-scala.git
 [submodule "vim-plugins/taglist-plus"]
 	path = vim-plugins/taglist-plus
 	url = https://github.com/int3/vim-taglist-plus.git
@@ -94,9 +61,6 @@
 [submodule "oh-my-zsh-custom/plugins/zsh-syntax-highlighting"]
 	path = oh-my-zsh-custom/plugins/zsh-syntax-highlighting
 	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule "vim-plugins/jade"]
-	path = vim-plugins/jade
-	url = git://github.com/digitaltoad/vim-jade.git
 [submodule "vim-plugins/gitgutter"]
 	path = vim-plugins/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
@@ -118,9 +82,6 @@
 [submodule "vim-plugins/delimitmate"]
 	path = vim-plugins/delimitmate
 	url = https://github.com/Raimondi/delimitMate.git
-[submodule "vim-plugins/jsx"]
-	path = vim-plugins/jsx
-	url = https://github.com/mxw/vim-jsx.git
 [submodule "vim-plugins/vim-expand-region"]
 	path = vim-plugins/vim-expand-region
 	url = https://github.com/terryma/vim-expand-region.git
@@ -133,3 +94,6 @@
 [submodule "vim-plugins/limelight"]
 	path = vim-plugins/limelight
 	url = https://github.com/junegunn/limelight.vim.git
+[submodule "vim-plugins/polyglot"]
+	path = vim-plugins/polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
