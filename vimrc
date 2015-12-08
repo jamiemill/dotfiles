@@ -217,3 +217,5 @@ set clipboard=unnamed
 autocmd! User GoyoEnter Limelight 0.8
 autocmd! User GoyoLeave Limelight!
 
+map <leader>g :Goyo<cr>
+
