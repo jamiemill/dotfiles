@@ -30,7 +30,7 @@ hi rubySymbol               guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi Comment                  guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
 hi rubyComment              guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
 hi Statement                guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
-hi PreProc                  guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
+hi PreProc                  guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
 hi Boolean                  guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
 hi rubyBoolean              guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
 hi Number                   guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
@@ -40,8 +40,8 @@ hi rubyStringDelimiter      guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi Special                  guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi Identifier               guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi Operator                 guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
-hi Type                     guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
-hi rubyConstant             guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
+hi Type                     guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
+hi rubyConstant             guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
 hi jsFuncParens             guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
 hi jsFuncBraces             guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
 hi jsFunction               guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
@@ -51,13 +51,13 @@ hi jsFunctionKey            guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi jsObjectKey              guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi jsThis                   guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
 hi htmlTag                  guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
-hi htmlSpecialTagName       guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
-hi htmlArg                  guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
+hi htmlSpecialTagName       guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
+hi htmlArg                  guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
 hi htmlString               guifg=#999999 ctermfg=246  gui=NONE cterm=NONE
 hi htmlTitle                guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi cssClassName             guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi cssTagName               guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
-hi cssBraces                guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
+hi cssBraces                guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
 hi markdownHeadingDelimiter guifg=#268BD2 ctermfg=32   gui=BOLD cterm=BOLD
 hi markdownH1               guifg=#268BD2 ctermfg=32   gui=BOLD cterm=BOLD
 hi markdownH2               guifg=#268BD2 ctermfg=32   gui=BOLD cterm=BOLD

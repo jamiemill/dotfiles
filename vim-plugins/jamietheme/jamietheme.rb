@@ -11,7 +11,7 @@ white = "fff"
 pink = "f25"
 lime = "3d2"
 orange = "c60"
-blue = "24f"
+blue = PowerlineColours[:blue]
 highlight = "bb2"
 subduedhighlight = "880"
 
@@ -79,14 +79,14 @@ vim_colors "jamietheme" do
   cssTagName lime
   cssBraces blue
 
-  markdownHeadingDelimiter PowerlineColours[:blue], :gui => "bold"
-  markdownH1 PowerlineColours[:blue], :gui => "bold"
-  markdownH2 PowerlineColours[:blue], :gui => "bold"
-  markdownH3 PowerlineColours[:blue], :gui => "bold"
-  markdownH4 PowerlineColours[:blue], :gui => "bold"
-  markdownH5 PowerlineColours[:blue], :gui => "bold"
-  markdownH6 PowerlineColours[:blue], :gui => "bold"
-  markdownListMarker PowerlineColours[:blue]
+  markdownHeadingDelimiter blue, :gui => "bold"
+  markdownH1 blue, :gui => "bold"
+  markdownH2 blue, :gui => "bold"
+  markdownH3 blue, :gui => "bold"
+  markdownH4 blue, :gui => "bold"
+  markdownH5 blue, :gui => "bold"
+  markdownH6 blue, :gui => "bold"
+  markdownListMarker blue
   markdownBold :gui => "bold"
   markdownItalic :gui => "italic"
 
