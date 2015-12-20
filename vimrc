@@ -214,8 +214,24 @@ call expand_region#custom_text_objects({
 " yank/paste use the system clipboard
 set clipboard=unnamed
 
-autocmd! User GoyoEnter Limelight 0.8
-autocmd! User GoyoLeave Limelight!
+function! s:goyo_enter()
+  silent !tmux set status off
+  set noshowmode
+  set noshowcmd
+  set scrolloff=999
+  Limelight 0.8
+endfunction
+
+function! s:goyo_leave()
+  silent !tmux set status on
+  set showmode
+  set showcmd
+  set scrolloff=5
+  Limelight!
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 map <leader>g :Goyo<cr>
 
