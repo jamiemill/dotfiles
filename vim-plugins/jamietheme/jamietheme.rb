@@ -87,6 +87,8 @@ vim_colors "jamietheme" do
   markdownH5 PowerlineColours[:blue], :gui => "bold"
   markdownH6 PowerlineColours[:blue], :gui => "bold"
   markdownListMarker PowerlineColours[:blue]
+  markdownBold :gui => "bold"
+  markdownItalic :gui => "italic"
 
   DiffAdd lime, "333"
   DiffChange :bg => grey

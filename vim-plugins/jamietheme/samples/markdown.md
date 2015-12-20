@@ -1,6 +1,6 @@
 # Heading 1
 
-Some text blah blah blah. Some text blah blah blah. Some text blah blah blah. Some text blah blah blah. Some text blah blah blah. Some text blah blah blah.
+Some text blah blah blah. Some text blah blah blah. Some text **bold** and _italic_ blah blah blah. Some text blah blah blah. Some text blah blah blah. Some text blah blah blah.
 
 - list item 1
 - list item 2

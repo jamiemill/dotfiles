@@ -66,6 +66,8 @@ hi markdownH4               guifg=#268BD2 ctermfg=32   gui=BOLD cterm=BOLD
 hi markdownH5               guifg=#268BD2 ctermfg=32   gui=BOLD cterm=BOLD
 hi markdownH6               guifg=#268BD2 ctermfg=32   gui=BOLD cterm=BOLD
 hi markdownListMarker       guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
+hi markdownBold             gui=BOLD cterm=BOLD
+hi markdownItalic           gui=ITALIC cterm=NONE
 hi DiffAdd                  guifg=#33DD22 ctermfg=76   guibg=#333333 ctermbg=236  gui=NONE cterm=NONE
 hi DiffChange               guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
 hi DiffDelete               guifg=#FF2255 ctermfg=197  guibg=#333333 ctermbg=236  gui=NONE cterm=NONE
