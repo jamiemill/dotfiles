@@ -58,7 +58,14 @@ hi htmlTitle                guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi cssClassName             guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi cssTagName               guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi cssBraces                guifg=#2244FF ctermfg=27   gui=NONE cterm=NONE
-hi markdownHeadingDelimiter guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
+hi markdownHeadingDelimiter guifg=#268BD2 ctermfg=32   gui=BOLD cterm=BOLD
+hi markdownH1               guifg=#268BD2 ctermfg=32   gui=BOLD cterm=BOLD
+hi markdownH2               guifg=#268BD2 ctermfg=32   gui=BOLD cterm=BOLD
+hi markdownH3               guifg=#268BD2 ctermfg=32   gui=BOLD cterm=BOLD
+hi markdownH4               guifg=#268BD2 ctermfg=32   gui=BOLD cterm=BOLD
+hi markdownH5               guifg=#268BD2 ctermfg=32   gui=BOLD cterm=BOLD
+hi markdownH6               guifg=#268BD2 ctermfg=32   gui=BOLD cterm=BOLD
+hi markdownListMarker       guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
 hi DiffAdd                  guifg=#33DD22 ctermfg=76   guibg=#333333 ctermbg=236  gui=NONE cterm=NONE
 hi DiffChange               guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
 hi DiffDelete               guifg=#FF2255 ctermfg=197  guibg=#333333 ctermbg=236  gui=NONE cterm=NONE

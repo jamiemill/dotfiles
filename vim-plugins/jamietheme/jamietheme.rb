@@ -79,7 +79,14 @@ vim_colors "jamietheme" do
   cssTagName lime
   cssBraces blue
 
-  markdownHeadingDelimiter pink
+  markdownHeadingDelimiter PowerlineColours[:blue], :gui => "bold"
+  markdownH1 PowerlineColours[:blue], :gui => "bold"
+  markdownH2 PowerlineColours[:blue], :gui => "bold"
+  markdownH3 PowerlineColours[:blue], :gui => "bold"
+  markdownH4 PowerlineColours[:blue], :gui => "bold"
+  markdownH5 PowerlineColours[:blue], :gui => "bold"
+  markdownH6 PowerlineColours[:blue], :gui => "bold"
+  markdownListMarker PowerlineColours[:blue]
 
   DiffAdd lime, "333"
   DiffChange :bg => grey
