@@ -128,4 +128,9 @@ vim_colors "jamietheme" do
   NERDTreeUp darkgrey
   NERDTreeCWD darkgrey
 
+  SpellBad PowerlineColours[:red], "NONE"
+  SpellCap PowerlineColours[:red], "NONE"
+  SpellRare PowerlineColours[:red], "NONE"
+  SpellLocal PowerlineColours[:red], "NONE"
+
 end

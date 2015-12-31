@@ -97,6 +97,10 @@ hi NERDTreeFile             guifg=#666666 ctermfg=241  gui=NONE cterm=NONE
 hi NERDTreeExecFile         guifg=#666666 ctermfg=241  gui=NONE cterm=NONE
 hi NERDTreeUp               guifg=#222222 ctermfg=235  gui=NONE cterm=NONE
 hi NERDTreeCWD              guifg=#222222 ctermfg=235  gui=NONE cterm=NONE
+hi SpellBad                 guifg=#DC322F ctermfg=166  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
+hi SpellCap                 guifg=#DC322F ctermfg=166  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
+hi SpellRare                guifg=#DC322F ctermfg=166  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
+hi SpellLocal               guifg=#DC322F ctermfg=166  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
 
 hi link vimFold     Folded
 hi link FoldColumn  Folded
