@@ -235,3 +235,8 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 map <leader>g :Goyo<cr>
 
+" Turn on spelling. If this fails at startup (esp in neovim) you might need to
+" run it again interactively to download the spelling files.
+set spell
+set spelllang=en
+set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
