@@ -238,3 +238,8 @@ map <leader>g :Goyo<cr>
 set spell
 set spelllang=en
 set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
+
+" Auto-fix last spelling mistake with ctrl-f
+" from: http://stackoverflow.com/a/16481737
+imap <c-f> <c-g>u<Esc>[s1z=`]a<c-g>u
+nmap <c-f> [s1z=<c-o>
