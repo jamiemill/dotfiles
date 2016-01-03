@@ -214,6 +214,7 @@ call expand_region#custom_text_objects({
 " yank/paste use the system clipboard
 set clipboard=unnamed
 
+" Goyo and Limelight setup
 function! s:goyo_enter()
   silent !tmux set status off
   set noshowmode
@@ -221,7 +222,6 @@ function! s:goyo_enter()
   set scrolloff=999
   Limelight 0.8
 endfunction
-
 function! s:goyo_leave()
   silent !tmux set status on
   set showmode
@@ -229,10 +229,8 @@ function! s:goyo_leave()
   set scrolloff=5
   Limelight!
 endfunction
-
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
-
 map <leader>g :Goyo<cr>
 
 " Turn on spelling. If this fails at startup (esp in neovim) you might need to
