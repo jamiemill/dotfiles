@@ -160,7 +160,7 @@ inoremap <C-j> <esc>:bnext<cr>
 map <leader>f :NERDTreeFind<cr>
 
 " Customise ctrl-p ignored files
-set wildignore+=*/.git/*,*.so,*.swp,*.zip
+set wildignore+=*/.git/*,*.so,*.swp,*.zip,**/node_modules
 " ignore play framework build dir
 set wildignore+=*/target/*
 
