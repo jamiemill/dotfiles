@@ -56,10 +56,10 @@ path=(
 export path
 
 # chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+command -v chruby && source /usr/local/opt/chruby/share/chruby/chruby.sh
+command -v chruby && source /usr/local/opt/chruby/share/chruby/auto.sh
 # use a local ruby
-chruby ruby 2.2.3
+command -v chruby && chruby ruby 2.2.3
 
 # `mkcd` to `mkdir -p` and `cd` to it.
 function mkcd {
