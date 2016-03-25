@@ -41,44 +41,31 @@ echo ""
 echo "Linking dotfiles..."
 echo ""
 
-FILES="vimrc tmux.conf bash_profile zshrc gitconfig"
+function link_file {
+    SRC="$1"
+    DEST="$2"
 
-for FILE in $FILES
-do
-	SRC="$PWD/$FILE"
-	DEST="$HOME/.$FILE"
-	mkdir -p $(dirname $DEST)
-	if [ -f $DEST ]; then
-		if [ ! -L $DEST ]; then
-			echo "ERROR: $DEST exists and is not a symlink, aborting!"
-			exit 1
-		else
-			echo "> Deleting $DEST"
-			rm $DEST
-		fi
-	fi
-	echo "> Linking $DEST"
-	ln -s $SRC $DEST
-done
-
-# Link fish config
-
-
-SRC="$PWD/config.fish"
-DEST="$HOME/.config/fish/config.fish"
-mkdir -p $(dirname $DEST)
-if [ -f $DEST ]; then
-    if [ ! -L $DEST ]; then
-        echo "ERROR: $DEST exists and is not a symlink, aborting!"
-        exit 1
+    mkdir -p `dirname $DEST`
+    if [ -e $DEST ]; then
+        if [ ! -L $DEST ]; then
+            echo "ERROR: $DEST exists and is not a symlink, aborting!"
+            exit 1
+        else
+            TYPE="Re-linking"
+        fi
     else
-        echo "> Deleting $DEST"
-        rm $DEST
+        TYPE="Linking"
     fi
-fi
-echo "> Linking $DEST"
-ln -s $SRC $DEST
+    echo "> $TYPE $SRC to $DEST"
+    ln -shf $SRC $DEST
+}
 
+link_file "$PWD/vimrc"        "$HOME/.vimrc"
+link_file "$PWD/tmux.conf"    "$HOME/.tmux.conf"
+link_file "$PWD/bash_profile" "$HOME/.bash_profile"
+link_file "$PWD/zshrc"        "$HOME/.zshrc"
+link_file "$PWD/gitconfig"    "$HOME/.gitconfig"
+link_file "$PWD/fish"         "$HOME/.config/fish/config.fish"
 
 # Make vim config available to nvim
 echo ""
