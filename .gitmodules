@@ -85,3 +85,6 @@
 [submodule "zgen"]
 	path = zgen
 	url = https://github.com/tarjoilija/zgen.git
+[submodule "vim-plugins/fish"]
+	path = vim-plugins/fish
+	url = https://github.com/dag/vim-fish.git
