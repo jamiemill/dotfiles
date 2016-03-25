@@ -47,6 +47,7 @@ for FILE in $FILES
 do
 	SRC="$PWD/$FILE"
 	DEST="$HOME/.$FILE"
+	mkdir -p $(dirname $DEST)
 	if [ -f $DEST ]; then
 		if [ ! -L $DEST ]; then
 			echo "ERROR: $DEST exists and is not a symlink, aborting!"
@@ -59,6 +60,25 @@ do
 	echo "> Linking $DEST"
 	ln -s $SRC $DEST
 done
+
+# Link fish config
+
+
+SRC="$PWD/config.fish"
+DEST="$HOME/.config/fish/config.fish"
+mkdir -p $(dirname $DEST)
+if [ -f $DEST ]; then
+    if [ ! -L $DEST ]; then
+        echo "ERROR: $DEST exists and is not a symlink, aborting!"
+        exit 1
+    else
+        echo "> Deleting $DEST"
+        rm $DEST
+    fi
+fi
+echo "> Linking $DEST"
+ln -s $SRC $DEST
+
 
 # Make vim config available to nvim
 echo ""
