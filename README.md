@@ -78,11 +78,8 @@ Removing a plugin (since git v1.8.5.2):
 
 ### ZSH
 
-Add custom plugins in `oh-my-zsh-custom/plugins` and then run `./install.sh` again
-to make it get copied to `oh-my-zsh/custom` where it will be found.
-
-Add custom themes to `oh-my-zsh-custom` and run `./install.sh` again.
-
+Add plugins in the zgen section of zshrc. Run `zgen reset` and open a new
+terminal to trigger the plugins to be fetched and added to the zgen init file.
 
 ### Fetching latest versions of submodules (e.g. Vim plugins)
 
