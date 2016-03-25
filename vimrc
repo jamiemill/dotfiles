@@ -3,6 +3,9 @@
 " Load plugins pathogen-style.
 call pathogen#infect('~/dotfiles/vim-plugins/{}')
 
+" fish is incompatible with syntastic, so ensire we use a different shell
+set shell=bash
+
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
