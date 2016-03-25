@@ -3,6 +3,9 @@ set fish_greeting
 # Git aliases
 alias gst "git status"
 alias gd "git diff"
+alias ga "git add"
+alias gc "git commit --verbose"
+alias gds "git diff --staged"
 
 # Use vim as my editor
 set VISUAL /usr/bin/vim
