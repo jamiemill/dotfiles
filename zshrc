@@ -4,11 +4,17 @@ source ~/dotfiles/zgen/zgen.zsh
 if ! zgen saved; then
   echo "Setting up zsh with prezto and theme..."
   zgen prezto
+
+  # Couldn't get prezto's highlighting module to work.
+  # so use this one instead.
+  zgen load zsh-users/zsh-syntax-highlighting
+
   zgen prezto git
   zgen prezto command-not-found
-  zgen prezto syntax-highlighting
+
   zgen load ~/dotfiles/themes
   zgen prezto prompt theme jamie
+
   zgen save
 fi
 
