@@ -24,14 +24,14 @@ function prompt_jamie_setup {
 
   # Set git-info parameters.
   zstyle ':prezto:module:git:info' verbose 'yes'
-  zstyle ':prezto:module:git:info:ahead' format "%F{cyan}⬆%f"
-  zstyle ':prezto:module:git:info:behind' format "%F{cyan}⬇%f"
+  zstyle ':prezto:module:git:info:ahead' format "%F{cyan}⬆ %f"
+  zstyle ':prezto:module:git:info:behind' format "%F{cyan}⬇ %f"
   zstyle ':prezto:module:git:info:branch' format "%F{cyan}%b%f"
   zstyle ':prezto:module:git:info:added' format "%F{green}+%f"
   zstyle ':prezto:module:git:info:deleted' format "%F{red}-%f"
   zstyle ':prezto:module:git:info:modified' format "%F{yellow}✗%f"
   zstyle ':prezto:module:git:info:untracked' format "%F{red}?%f"
-  zstyle ':prezto:module:git:info:keys' format 'prompt' '(%A%B%b%d%a%m%u)'
+  zstyle ':prezto:module:git:info:keys' format 'prompt' '(%b%A%B%d%a%m%u)'
 
   # Define prompts.
   PROMPT="%F{green}%~%f "'${git_info:+${(e)git_info[prompt]}}'"$ "
