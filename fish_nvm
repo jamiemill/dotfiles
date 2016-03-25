@@ -16,6 +16,7 @@ command -v nvim > /dev/null; and export VISUAL=(command -v nvim)
 
 alias v "vim ."
 
-set fisher_home ~/.local/share/fisherman
-set fisher_config ~/.config/fisherman
-source $fisher_home/config.fish
+# use bass to make a fish-friendly nvm
+function nvm
+    bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
+end

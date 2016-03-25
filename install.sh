@@ -67,6 +67,7 @@ link_file "$PWD/zshrc"        "$HOME/.zshrc"
 link_file "$PWD/gitconfig"    "$HOME/.gitconfig"
 link_file "$PWD/fish"         "$HOME/.config/fish/config.fish"
 link_file "$PWD/fish_prompt"  "$HOME/.config/fish/functions/fish_prompt.fish"
+link_file "$PWD/fish_nvm"  "$HOME/.config/fish/functions/nvm.fish"
 
 # Make vim config available to nvim
 echo ""
