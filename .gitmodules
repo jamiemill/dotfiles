@@ -43,15 +43,9 @@
 [submodule "vim-plugins/nerdtree-tabs"]
 	path = vim-plugins/nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = git@github.com:robbyrussell/oh-my-zsh.git
 [submodule "vim-plugins/taglist-plus"]
 	path = vim-plugins/taglist-plus
 	url = https://github.com/int3/vim-taglist-plus.git
-[submodule "oh-my-zsh-custom/plugins/zsh-syntax-highlighting"]
-	path = oh-my-zsh-custom/plugins/zsh-syntax-highlighting
-	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "vim-plugins/gitgutter"]
 	path = vim-plugins/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
@@ -88,3 +82,6 @@
 [submodule "vim-plugins/markdown-folding"]
 	path = vim-plugins/markdown-folding
 	url = https://github.com/nelstrom/vim-markdown-folding.git
+[submodule "zgen"]
+	path = zgen
+	url = https://github.com/tarjoilija/zgen.git

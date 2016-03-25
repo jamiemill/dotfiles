@@ -1,12 +1,16 @@
-# Path to your oh-my-zsh configuration.
-export ZSH=~/dotfiles/oh-my-zsh
+# load zgen
+source ~/dotfiles/zgen/zgen.zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="jamie"
+if ! zgen saved; then
+  echo "Setting up zsh with prezto and theme..."
+  zgen prezto
+  zgen prezto git
+  zgen prezto command-not-found
+  zgen prezto syntax-highlighting
+  zgen load ~/dotfiles/themes
+  zgen prezto prompt theme jamie
+  zgen save
+fi
 
 # Use vim as my editor
 export VISUAL=/usr/bin/vim
@@ -16,28 +20,6 @@ command -v nvim > /dev/null && alias vim="nvim"
 command -v nvim > /dev/null && export VISUAL=$(command -v nvim)
 
 alias v="vim ."
-
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-# Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-COMPLETION_WAITING_DOTS="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git zsh-syntax-highlighting)
-
-source $ZSH/oh-my-zsh.sh
 
 export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
@@ -82,8 +64,6 @@ function ie() {
     TARGET=$(curl -s $JOB | grep qa-a-ie${1:-"8"}-001 | rev | cut -d " " -f 1 | rev)
     "$VNCBIN" $TARGET
 }
-
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
