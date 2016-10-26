@@ -166,6 +166,8 @@ map <leader>f :NERDTreeFind<cr>
 set wildignore+=*/.git/*,*.so,*.swp,*.zip,**/node_modules
 " ignore play framework build dir
 set wildignore+=*/target/*
+" ignore jekyll site build
+set wildignore+=*/_site/*
 
 " Specify which javascript syntax checker(s) to use with syntastic and in what
 " order.
