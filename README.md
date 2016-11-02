@@ -31,8 +31,9 @@ Then ensure you run `source ~/.profile` in all open terminal windows,
 including those running vim, to get it to work.
 
 Uses ruby-install and chruby for ruby version management. Install with:
+
     brew install ruby-install
-    brew install chruby
+    brew install chruby chruby-fish
 
 Then if you need to install a gem, `gem install` can be used without sudo
 and won't be touching the system installation.
@@ -102,4 +103,3 @@ Then run `./update.sh` on all other machines.
   5. `cd -`
   6. `git add .gitmodules {submodule dir}`
   7. commit and push
-
