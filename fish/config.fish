@@ -22,3 +22,9 @@ alias v "vim ."
 set fisher_home ~/.local/share/fisherman
 set fisher_config ~/.config/fisherman
 source $fisher_home/config.fish
+
+# chruby
+source /usr/local/share/chruby/chruby.fish
+# To enable auto-switching, uncomment this line:
+# source /usr/local/share/chruby/auto.fish
+chruby ruby 2.2.3
