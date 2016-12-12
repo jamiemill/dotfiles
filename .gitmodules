@@ -88,3 +88,6 @@
 [submodule "vim-plugins/fish"]
 	path = vim-plugins/fish
 	url = https://github.com/dag/vim-fish.git
+[submodule "vim-plugins/vimwiki"]
+	path = vim-plugins/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
