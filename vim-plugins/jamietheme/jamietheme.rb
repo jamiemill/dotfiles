@@ -1,19 +1,27 @@
 require "./powerline_colours.rb"
+require "color"
 
+def to_vim(color)
+  color.html[1..-1]
+end
 
-almostblack = "111"
-darkgrey = "222"
-grey = "444"
-midgrey = "666"
-lightgrey = "999"
+primary_color = ::Color::RGB.by_hex("#" + PowerlineColours[:blue])
+black = ::Color::RGB.by_hex("#000000")
+white = ::Color::RGB.by_hex("#ffffff")
+tinted_black = black.mix_with(primary_color, 80)
+
+almostblack = to_vim(tinted_black)
+darkgrey = to_vim(tinted_black.mix_with(white, 80))
+grey = to_vim(tinted_black.mix_with(white, 70))
+midgrey = to_vim(tinted_black.mix_with(white, 60))
+lightgrey = to_vim(tinted_black.mix_with(white, 50))
 white = "fff"
-
 pink = "f25"
 lime = "3d2"
-orange = "c60"
+yellow = "cc2"
 blue = PowerlineColours[:blue]
-highlight = "bb2"
-subduedhighlight = "880"
+highlight = lightgrey
+subduedhighlight = midgrey
 
 vim_colors "jamietheme" do
 
@@ -40,9 +48,9 @@ vim_colors "jamietheme" do
 
   Statement lime
   PreProc  blue
-  Boolean orange
-  rubyBoolean orange
-  Number orange
+  Boolean yellow
+  rubyBoolean yellow
+  Number yellow
 
 
   Constant pink
@@ -96,9 +104,9 @@ vim_colors "jamietheme" do
 
   SignColumn :bg => almostblack
   GitGutterAdd lime
-  GitGutterChange orange
+  GitGutterChange yellow
   GitGutterDelete pink
-  GitGutterChangeDelete orange
+  GitGutterChangeDelete yellow
 
   Search darkgrey, highlight
   IncSearch darkgrey, subduedhighlight
@@ -128,9 +136,9 @@ vim_colors "jamietheme" do
   NERDTreeUp darkgrey
   NERDTreeCWD darkgrey
 
-  SpellBad PowerlineColours[:red], "NONE"
-  SpellCap PowerlineColours[:red], "NONE"
-  SpellRare PowerlineColours[:red], "NONE"
-  SpellLocal PowerlineColours[:red], "NONE"
+  SpellBad yellow, "NONE"
+  SpellCap yellow, "NONE"
+  SpellRare yellow, "NONE"
+  SpellLocal yellow, "NONE"
 
 end

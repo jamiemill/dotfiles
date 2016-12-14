@@ -18,22 +18,22 @@ if has("gui_running")
     set background=dark
 endif
 
-hi Normal                   guifg=#999999 ctermfg=246  guibg=#111111 ctermbg=233  gui=NONE cterm=NONE
-hi Folded                   guifg=#555555 ctermfg=240  guibg=#222222 ctermbg=235  gui=BOLD cterm=BOLD
-hi LineNr                   guifg=#222222 ctermfg=235  gui=NONE cterm=NONE
-hi NonText                  guifg=#222222 ctermfg=235  gui=NONE cterm=NONE
-hi TabLine                  guifg=#444444 ctermfg=238  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
-hi TabLineSel               guifg=#444444 ctermfg=238  guibg=#111111 ctermbg=233  gui=NONE cterm=NONE
-hi TabLineFill              guifg=#222222 ctermfg=235  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
+hi Normal                   guifg=#838D94 ctermfg=245  guibg=#081C2A ctermbg=234  gui=NONE cterm=NONE
+hi Folded                   guifg=#555555 ctermfg=240  guibg=#394955 ctermbg=238  gui=BOLD cterm=BOLD
+hi LineNr                   guifg=#394955 ctermfg=238  gui=NONE cterm=NONE
+hi NonText                  guifg=#394955 ctermfg=238  gui=NONE cterm=NONE
+hi TabLine                  guifg=#52606A ctermfg=59   guibg=#394955 ctermbg=238  gui=NONE cterm=NONE
+hi TabLineSel               guifg=#52606A ctermfg=59   guibg=#081C2A ctermbg=234  gui=NONE cterm=NONE
+hi TabLineFill              guifg=#394955 ctermfg=238  guibg=#394955 ctermbg=238  gui=NONE cterm=NONE
 hi rubyControl              guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi rubySymbol               guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
-hi Comment                  guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
-hi rubyComment              guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
+hi Comment                  guifg=#52606A ctermfg=59   gui=NONE cterm=NONE
+hi rubyComment              guifg=#52606A ctermfg=59   gui=NONE cterm=NONE
 hi Statement                guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi PreProc                  guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
-hi Boolean                  guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
-hi rubyBoolean              guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
-hi Number                   guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
+hi Boolean                  guifg=#CCCC22 ctermfg=184  gui=NONE cterm=NONE
+hi rubyBoolean              guifg=#CCCC22 ctermfg=184  gui=NONE cterm=NONE
+hi Number                   guifg=#CCCC22 ctermfg=184  gui=NONE cterm=NONE
 hi Constant                 guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi rubyString               guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
 hi rubyStringDelimiter      guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
@@ -42,18 +42,18 @@ hi Identifier               guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi Operator                 guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi Type                     guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
 hi rubyConstant             guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
-hi jsFuncParens             guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
-hi jsFuncBraces             guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
-hi jsFunction               guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
+hi jsFuncParens             guifg=#52606A ctermfg=59   gui=NONE cterm=NONE
+hi jsFuncBraces             guifg=#52606A ctermfg=59   gui=NONE cterm=NONE
+hi jsFunction               guifg=#52606A ctermfg=59   gui=NONE cterm=NONE
 hi jsParens                 guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
 hi jsBraces                 guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi jsFunctionKey            guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi jsObjectKey              guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
-hi jsThis                   guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
-hi htmlTag                  guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
+hi jsThis                   guifg=#52606A ctermfg=59   gui=NONE cterm=NONE
+hi htmlTag                  guifg=#52606A ctermfg=59   gui=NONE cterm=NONE
 hi htmlSpecialTagName       guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
 hi htmlArg                  guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
-hi htmlString               guifg=#999999 ctermfg=246  gui=NONE cterm=NONE
+hi htmlString               guifg=#838D94 ctermfg=245  gui=NONE cterm=NONE
 hi htmlTitle                guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi cssClassName             guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi cssTagName               guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
@@ -69,38 +69,38 @@ hi markdownListMarker       guifg=#268BD2 ctermfg=32   gui=NONE cterm=NONE
 hi markdownBold             gui=BOLD cterm=BOLD
 hi markdownItalic           gui=ITALIC cterm=NONE
 hi DiffAdd                  guifg=#33DD22 ctermfg=76   guibg=#333333 ctermbg=236  gui=NONE cterm=NONE
-hi DiffChange               guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
+hi DiffChange               guibg=#52606A ctermbg=59   gui=NONE cterm=NONE
 hi DiffDelete               guifg=#FF2255 ctermfg=197  guibg=#333333 ctermbg=236  gui=NONE cterm=NONE
-hi SignColumn               guibg=#111111 ctermbg=233  gui=NONE cterm=NONE
+hi SignColumn               guibg=#081C2A ctermbg=234  gui=NONE cterm=NONE
 hi GitGutterAdd             guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
-hi GitGutterChange          guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
+hi GitGutterChange          guifg=#CCCC22 ctermfg=184  gui=NONE cterm=NONE
 hi GitGutterDelete          guifg=#FF2255 ctermfg=197  gui=NONE cterm=NONE
-hi GitGutterChangeDelete    guifg=#CC6600 ctermfg=166  gui=NONE cterm=NONE
-hi Search                   guifg=#222222 ctermfg=235  guibg=#BBBB22 ctermbg=142  gui=NONE cterm=NONE
-hi IncSearch                guifg=#222222 ctermfg=235  guibg=#888800 ctermbg=100  gui=NONE cterm=NONE
-hi MatchParen               guifg=#222222 ctermfg=235  guibg=#888800 ctermbg=100  gui=NONE cterm=NONE
-hi Visual                   guifg=#999999 ctermfg=246  guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
-hi StatusLine               guifg=#999999 ctermfg=246  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
-hi StatusLineNC             guifg=#444444 ctermfg=238  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
-hi VertSplit                guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
-hi Pmenu                    guifg=#555555 ctermfg=240  guibg=#222222 ctermbg=235  gui=NONE cterm=NONE
-hi PmenuSel                 guifg=#222222 ctermfg=235  guibg=#BBBB22 ctermbg=142  gui=NONE cterm=NONE
-hi PmenuSbar                guibg=#444444 ctermbg=238  gui=NONE cterm=NONE
-hi PmenuThumb               guibg=#999999 ctermbg=246  gui=NONE cterm=NONE
-hi CtrlPMatch               guifg=#222222 ctermfg=235  guibg=#BBBB22 ctermbg=142  gui=BOLD cterm=BOLD
-hi CursorLine               guifg=#222222 ctermfg=235  guibg=#888800 ctermbg=100  gui=NONE cterm=NONE
+hi GitGutterChangeDelete    guifg=#CCCC22 ctermfg=184  gui=NONE cterm=NONE
+hi Search                   guifg=#394955 ctermfg=238  guibg=#838D94 ctermbg=245  gui=NONE cterm=NONE
+hi IncSearch                guifg=#394955 ctermfg=238  guibg=#6B777F ctermbg=243  gui=NONE cterm=NONE
+hi MatchParen               guifg=#394955 ctermfg=238  guibg=#6B777F ctermbg=243  gui=NONE cterm=NONE
+hi Visual                   guifg=#838D94 ctermfg=245  guibg=#52606A ctermbg=59   gui=NONE cterm=NONE
+hi StatusLine               guifg=#838D94 ctermfg=245  guibg=#394955 ctermbg=238  gui=NONE cterm=NONE
+hi StatusLineNC             guifg=#52606A ctermfg=59   guibg=#394955 ctermbg=238  gui=NONE cterm=NONE
+hi VertSplit                guibg=#394955 ctermbg=238  gui=NONE cterm=NONE
+hi Pmenu                    guifg=#555555 ctermfg=240  guibg=#394955 ctermbg=238  gui=NONE cterm=NONE
+hi PmenuSel                 guifg=#394955 ctermfg=238  guibg=#838D94 ctermbg=245  gui=NONE cterm=NONE
+hi PmenuSbar                guibg=#52606A ctermbg=59   gui=NONE cterm=NONE
+hi PmenuThumb               guibg=#838D94 ctermbg=245  gui=NONE cterm=NONE
+hi CtrlPMatch               guifg=#394955 ctermfg=238  guibg=#838D94 ctermbg=245  gui=BOLD cterm=BOLD
+hi CursorLine               guifg=#394955 ctermfg=238  guibg=#6B777F ctermbg=243  gui=NONE cterm=NONE
 hi CtrlPPrtCursor           gui=REVERSE cterm=REVERSE
-hi NERDTreeDir              guifg=#999999 ctermfg=246  gui=NONE cterm=NONE
-hi NERDTreeOpenable         guifg=#444444 ctermfg=238  gui=NONE cterm=NONE
+hi NERDTreeDir              guifg=#838D94 ctermfg=245  gui=NONE cterm=NONE
+hi NERDTreeOpenable         guifg=#52606A ctermfg=59   gui=NONE cterm=NONE
 hi NERDTreeClosable         guifg=#33DD22 ctermfg=76   gui=NONE cterm=NONE
-hi NERDTreeFile             guifg=#666666 ctermfg=241  gui=NONE cterm=NONE
-hi NERDTreeExecFile         guifg=#666666 ctermfg=241  gui=NONE cterm=NONE
-hi NERDTreeUp               guifg=#222222 ctermfg=235  gui=NONE cterm=NONE
-hi NERDTreeCWD              guifg=#222222 ctermfg=235  gui=NONE cterm=NONE
-hi SpellBad                 guifg=#DC322F ctermfg=166  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
-hi SpellCap                 guifg=#DC322F ctermfg=166  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
-hi SpellRare                guifg=#DC322F ctermfg=166  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
-hi SpellLocal               guifg=#DC322F ctermfg=166  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
+hi NERDTreeFile             guifg=#6B777F ctermfg=243  gui=NONE cterm=NONE
+hi NERDTreeExecFile         guifg=#6B777F ctermfg=243  gui=NONE cterm=NONE
+hi NERDTreeUp               guifg=#394955 ctermfg=238  gui=NONE cterm=NONE
+hi NERDTreeCWD              guifg=#394955 ctermfg=238  gui=NONE cterm=NONE
+hi SpellBad                 guifg=#CCCC22 ctermfg=184  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
+hi SpellCap                 guifg=#CCCC22 ctermfg=184  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
+hi SpellRare                guifg=#CCCC22 ctermfg=184  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
+hi SpellLocal               guifg=#CCCC22 ctermfg=184  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
 
 hi link vimFold     Folded
 hi link FoldColumn  Folded
