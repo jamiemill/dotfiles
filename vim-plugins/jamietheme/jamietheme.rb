@@ -5,21 +5,35 @@ def to_vim(color)
   color.html[1..-1]
 end
 
-primary_color = ::Color::RGB.by_hex("#" + PowerlineColours[:blue])
-black = ::Color::RGB.by_hex("#000000")
-white = ::Color::RGB.by_hex("#ffffff")
-tinted_black = black.mix_with(primary_color, 80)
+module ::Palette
+  Black = ::Color::RGB.by_hex("#000000")
+  White = ::Color::RGB.by_hex("#ffffff")
 
-almostblack = to_vim(tinted_black)
-darkgrey = to_vim(tinted_black.mix_with(white, 80))
-grey = to_vim(tinted_black.mix_with(white, 70))
-midgrey = to_vim(tinted_black.mix_with(white, 60))
-lightgrey = to_vim(tinted_black.mix_with(white, 50))
-white = "fff"
-pink = "f25"
-lime = "3d2"
-yellow = "cc2"
-blue = PowerlineColours[:blue]
+  Pink = ::Color::RGB.by_hex("#ff2255")
+  Lime = ::Color::RGB.by_hex("#33dd22")
+  Yellow = ::Color::RGB.by_hex("#cccc22")
+  Blue = ::Color::RGB.by_hex("#"+PowerlineColours[:blue])
+
+  Almostblack = Black.mix_with(Blue, 80)
+
+  Darkgrey = Almostblack.mix_with(White, 80)
+  Grey = Almostblack.mix_with(White, 70)
+  Midgrey = Almostblack.mix_with(White, 60)
+  Lightgrey = Almostblack.mix_with(White, 50)
+end
+
+black = to_vim(Palette::Black)
+white = to_vim(Palette::White)
+pink = to_vim(Palette::Pink)
+lime = to_vim(Palette::Lime)
+yellow = to_vim(Palette::Yellow)
+blue = to_vim(Palette::Blue)
+almostblack = to_vim(Palette::Almostblack)
+darkgrey = to_vim(Palette::Darkgrey)
+grey = to_vim(Palette::Grey)
+midgrey = to_vim(Palette::Midgrey)
+lightgrey = to_vim(Palette::Lightgrey)
+
 highlight = lightgrey
 subduedhighlight = midgrey
 
