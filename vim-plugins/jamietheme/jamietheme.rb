@@ -5,7 +5,7 @@ def to_vim(color)
   color.html[1..-1]
 end
 
-module ::Palette
+module Palette
   Black = ::Color::RGB.by_hex("#000000")
   White = ::Color::RGB.by_hex("#ffffff")
 
@@ -20,6 +20,10 @@ module ::Palette
   Grey = Almostblack.mix_with(White, 70)
   Midgrey = Almostblack.mix_with(White, 60)
   Lightgrey = Almostblack.mix_with(White, 50)
+end
+
+Palette.constants.each do |c|
+  STDERR.puts "#{c}: #{Palette.const_get(c).html}"
 end
 
 black = to_vim(Palette::Black)
