@@ -28,3 +28,5 @@ source /usr/local/share/chruby/chruby.fish
 # To enable auto-switching, uncomment this line:
 # source /usr/local/share/chruby/auto.fish
 chruby ruby 2.2.3
+
+nvm use --silent 7
