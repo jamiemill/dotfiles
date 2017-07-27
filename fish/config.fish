@@ -9,6 +9,7 @@ alias gds "git diff --staged"
 alias gpr "git pull --rebase"
 alias gco "git checkout"
 alias gp "git push"
+alias gpp "git pp"
 
 # Use vim as my editor
 set VISUAL /usr/bin/vim
