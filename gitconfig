@@ -9,7 +9,8 @@
     lg = log --graph --abbrev-commit --decorate --date=relative \
         --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)%n          %C(white)%s%C(reset)' \
         --all
-    pp = !git pull --rebase --autostash; and git push;
+    # Not working, doesn't execute second command
+    # pp = !echo "Pulling...\n"; and git pull --rebase --autostash; and echo "Pushing...\n"; and git push;
 
 [pull]
 	rebase = true
